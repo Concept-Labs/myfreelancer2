@@ -1,0 +1,61 @@
+
+.photo {
+	float: left;
+    width: 33.333333%;
+	padding: 10px;
+	box-sizing: border-box;
+    margin-top: 20px;
+}
+.photo img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 10px solid #fff;
+    box-sizing: border-box;
+}
+.photo a:hover {
+    opacity:.2;
+}
+
+.photo a {
+    display: block;
+    position: relative;
+    transition: .3s all;
+}
+.photo a:after {
+    content: '';
+    background: url(../images/eys.png) no-repeat center;
+    width: 52px;
+    height: 35px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0px;
+    right: 0;
+    visibility: hidden;
+}
+.photo:hover> a:after {
+    visibility: visible;
+}
+.photo figcaption {
+    color: #999999;
+    text-align: center;
+    margin-top: 10px;
+}
+.container h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #cccccc;
+    text-align: center;
+    margin: 30px 0;
+}
+#gallery {
+    margin-bottom: 160px;
+}
+#gallery:after { 
+   content: '';
+   display: block; 
+   height: 0; 
+   clear: both;
+}

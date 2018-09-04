@@ -1,0 +1,105 @@
+.header{
+
+	width: 1140px;
+	height: 77px;
+	margin:0 auto;
+	background-color: #000000c7;
+
+	border-radius: 0 0 5px 5px;
+	font-size: 115%;
+	position: fixed;
+	top:0px;
+	z-index:1000;
+	
+}
+.logo{
+	width: 230px;
+	float: left;
+	height: 77px;
+    margin: 20px 0 0 20px;
+	-webkit-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}	
+.logo:hover{
+	transform: scale(1.02);
+}
+.logo img{
+	width: 230px;
+	height: auto;
+}
+
+.menu{
+	float: right;
+	height: 67px;
+	padding:0 250px 0 0;
+}
+
+.menu li{
+	  display: inline-block;
+	  transition: all 0.2s ease-out;
+} 
+
+.menu li:hover{
+ background: #02d871;
+ transition: all 0.2s ease-out;
+}
+
+
+.menu li a{
+	text-decoration: none;
+	display: block;
+	margin: 0px;
+	padding: 27px 23px 27px 23px;
+	color: #fff;
+	letter-spacing: 0.1px;
+}
+.menu li a:hover{
+	color: #fff;
+	transition: all 0.3s ease-out;
+}
+
+/* Вибір мови в хедері */
+.langbar{
+
+	cursor: pointer;
+	margin: 30px 0 0 30px;
+	float: left;
+	color: #fff;
+	font: normal 90% 'century gothic', arial;
+}
+.langbar li button{
+	color: #fff;
+	font: normal 90% 'century gothic', arial;
+	background: none;
+	border: none;
+
+	cursor: pointer;
+	list-style-type: none;
+		transition: .2s all;
+}
+.langbar li{
+
+	padding: 10px 10px;
+	list-style-type: none;
+}
+.langbar li button:hover{
+	color: #02d871;
+}
+ul.sub-lang{
+	margin-top: 28px;
+		
+		border-radius:0 0 5px 5px;
+	background: #000000c7;
+	 position: absolute;  
+	 max-height:0px;
+    overflow:hidden;
+    -webkit-transition:max-height 0.5s linear;
+    -moz-transition:max-height 0.5s linear;
+    transition:max-height 0.5s linear;
+}
+
+ul.lang:hover ul.sub-lang{
+	max-height:300px;
+}
+/* кінець мови в хедері */
