@@ -78,63 +78,79 @@
 							<br>
 							<p>Ми молода перспективна команда, яка цілеспрямовано займаєтсья  в сфері "веб-розробка". 	<br> Працюючи з нами ви отримаєте найбільш зручний та сучасний сайт, за короткий час і доступну ціну.</p>
 						</div>
-				
+
 						<div class="container">
 							<div class="cont_img">
 								<img src="img/Без назви-2.png" alt="Ескиз на ПК">
 							</div>					
 							<div class="cont_content">
 								<ul>
-									<li>Сайт візитка
-									<p>Це повноцінний інтернет-ресурс, як правило, складається з сторінки, що містить основну інформацію про компанію, її діяльність, пропоновані товари або послуги, особливості та способи зворотного зв’язку. Грамотно розроблений сайт-візитка стає візитною карткою, ефективною рекламою, цілодобовим офісом, обличчям компанії в Інтернеті. </p>
+									<li>Сайт - візитка
+										<p>Це повноцінний інтернет-ресурс, як правило, складається з сторінки, що містить основну інформацію про компанію, її діяльність, пропоновані товари або послуги, особливості та способи зворотного зв’язку. Грамотно розроблений сайт-візитка стає візитною карткою, ефективною рекламою, цілодобовим офісом, обличчям компанії в Інтернеті. </p>
 									</li>
-									<li>Інтернет-магазин
-									<p>Це місце в інтернеті, за допомогою якого відбувається прямий продаж товарів споживачеві (юридичній або фізичній особі), враховуючи доставку. При цьому розміщення споживацької інформації, замовлення товару і угода відбуваються там само, всередині мережі (на сайті інтернет-магазину).</p>
+									<li>Інтернет - магазин
+										<p>Це місце в інтернеті, за допомогою якого відбувається прямий продаж товарів споживачеві (юридичній або фізичній особі), враховуючи доставку. При цьому розміщення споживацької інформації, замовлення товару і угода відбуваються там само, всередині мережі (на сайті інтернет-магазину).</p>
 									</li>
 									<li>Інформаційний сайт
-									<p>Інформаційний сайт - це орієнтований на зовнішню аудиторію сайт, який створює присутність організації в мережі Інтернет. Першочерговим завданням такого сайту є представлення бренду організації потенційним клієнтам.</p>
+										<p>Інформаційний сайт - це орієнтований на зовнішню аудиторію сайт, який створює присутність організації в мережі Інтернет. Першочерговим завданням такого сайту є представлення бренду організації потенційним клієнтам.</p>
 									</li>
 								</ul>
 							</div>
 						</div>	
 					</div>
-						<div class="pricings">
-							<div class="pric_title">
-								<h1>Наші роботи</h1>
-								<p>Тут ви можете побачити зразки наших робіт.</p>
-							</div>
-							<br>
-							<br>
-							<div class="price">
-								<div class="price_con">
-									<div class="works_block">
-										<div class="img_block">
-											<img src="img/1.png" alt="">
-										</div>
-										<div class="title-block">
-											
-										</div>
+					<div class="pricings">
+						<div class="pric_title">
+							<h1>Наші роботи</h1>
+							<p>Тут ви можете побачити зразки наших робіт.</p>
+						</div>
+						<br>
+						<br>
+						<div class="price">
+							<div class="price_con">
+								<div class="works_block">
+									<div class="img_block">
+										<img src="img/1.png" alt="">
 									</div>
-									<div class="works_block">
-										<div class="img_block">
-											<img src="img/2.png" alt="">
-										</div>
-										<div class="title-block">
-											
-										</div>
+									<div class="title-block">
+
 									</div>
-									<div class="works_block">
-										<div class="img_block">
-											<img src="img/3.png" alt="">
-										</div>
-										<div class="title-block">
-											
-										</div>
+								</div>
+								<div class="works_block">
+									<div class="img_block">
+										<img src="img/2.png" alt="">
+									</div>
+									<div class="title-block">
+
+									</div>
+								</div>
+								<div class="works_block">
+									<div class="img_block">
+										<img src="img/3.png" alt="">
+									</div>
+									<div class="title-block">
+
 									</div>
 								</div>
 							</div>
-						</div>	
-						<div class="contact_form">
+						</div>
+					</div>	
+					<div class="why_us_block">
+						<div class="why_us">
+							<div class="why_us_title">
+								<h1>Чому ми?</h1>
+								<br>
+								<p class="title_p1">Ми робимо швидко та якісно.</p>
+								<br>
+								<p class="title_p2">Ми вже довгий час займаємся в цій сфері.</p>
+								<br>
+								<p class="title_p3">Ми видповідально ставимося до своєї роботи.</p>
+							</div>
+							
+						</div>
+						
+					</div>
+					<div class="contact_form">
+						<div class="con_block">
 							<div class="con_left">
 								<h1>Contact Form</h1>
 								<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
@@ -153,38 +169,29 @@
 										San Francisco, CA 94107<br/>
 										P: (123) 456-7890
 									</p>
-									<p class="right"><b>Twitter, Inc.</b><br/>
-										795 Folsom Ave, Suite 600<br/>
-										San Francisco, CA 94107<br/>
-										P: (123) 456-7890
-									</p>
 								</div>
 								<div class="connect">
 									<h1>Connect with us</h1>
 									<div class="contact-left">
-										<a href="#"><i class="fab fa-facebook-f"></i>Facebook</a><br/><br/>
-										<a href="#"><i class="fab fa-google-plus-g"></i></i>Google Plus</a><br/><br/>
-										<a href="#"><i class="fab fa-pinterest"></i>Pinterest</a>
+										<a href="#"><i class="fab fa-skype"></i>Skype</a><br/><br/>
+										<a href="#"><i class="fab fa-telegram-plane"></i>Telegram</a><br/><br/>
+										<a href="#"><i class="fab fa-viber"></i>Viber</a>
 									</div>
-									<div class="contact-right">
-										<a href="#"><i class="fab fa-linkedin-in"></i>Linkedin</a><br/><br/>
-										<a href="#"><i class="fab fa-twitter"></i>Twitter</a><br/>
-										<a href="#"><i class="fab fa-youtube"></i></i>Youtube</a>
-										
-									</div>
+									
 								</div>
 							</div>
 						</div>
-						<div class="footer">
-							<div class="fot-left">
-								<p>© 2018 Shape. All Rights Reserved.</p>
-							</div>
-
-
+					</div>
+					<div class="footer">
+						<div class="fot-left">
+							<p><span style="color: #02d871">© MY FREELANCER</span> - Design by BULYK | Code by BULAVA</p>
 						</div>
-					</div>	
-					
-					
-					
-				</body>
-				</html>
+
+
+					</div>
+				</div>	
+
+
+
+			</body>
+			</html>
