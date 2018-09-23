@@ -21,8 +21,8 @@
 		padding: 0;
 	}
 	.menu li a {
-    padding: 27px 7px 27px 23px;
-}
+		padding: 27px 7px 27px 23px;
+	}
 	.menu_tel {
 		display: none;
 	}
@@ -240,6 +240,11 @@
 		width: 87.5%;
 		padding: 4%;
 		border: 0px;
+	}
+
+	.con_left input[type="submit"] {
+		font-size: 110%;
+		padding: 15px;
 	}
 	.con_right {
 		float: none;
