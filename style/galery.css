@@ -1,61 +1,293 @@
-
-.photo {
-	float: left;
-    width: 33.333333%;
-	padding: 10px;
-	box-sizing: border-box;
-    margin-top: 20px;
+/* блок наших робіт */
+.grid3{
+    margin-top: 8px;
 }
-.photo img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    border: 10px solid #fff;
-    box-sizing: border-box;
-}
-.photo a:hover {
-    opacity:.2;
-}
-
-.photo a {
-    display: block;
+.grid {
+    width: 300px;
+    height: 300px;
+    float: left;
     position: relative;
-    transition: .3s all;
+    padding-right: 33px;
+    max-width: 1000px;
+    list-style: none;
+    text-align: center;
 }
-.photo a:after {
-    content: '';
-    background: url(../images/eys.png) no-repeat center;
-    width: 52px;
-    height: 35px;
+
+/* Common style */
+.grid figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 320px;
+    max-width: 480px;
+    max-height: 360px;
+    width: 48%;
+    height: auto;
+    background: #3085a3;
+    text-align: center;
+    cursor: pointer;
+}
+
+.grid figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 0.8;
+}
+
+.grid figure figcaption {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+    pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
     position: absolute;
-    margin: auto;
     top: 0;
     left: 0;
-    bottom: 0px;
-    right: 0;
-    visibility: hidden;
+    width: 100%;
+    height: 100%;
 }
-.photo:hover> a:after {
-    visibility: visible;
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
 }
-.photo figcaption {
-    color: #999999;
+
+.grid figure h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+}
+
+.grid figure h2 span {
+    font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+    margin: 0;
+}
+
+.grid figure p {
+    letter-spacing: 1px;
+    font-size: 68.5%;
+}
+
+figure.effect-duke {
+    background: -webkit-linear-gradient(-45deg, #34495e 0%,#02d871 100%);
+    background: linear-gradient(-45deg, #34495e 0%,#02d871 100%);
+}
+
+figure.effect-duke img,
+figure.effect-duke p {
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-duke:hover img {
+    opacity: 0.1;
+    -webkit-transform: scale3d(2,2,1);
+    transform: scale3d(2,2,1);
+}
+
+figure.effect-duke h2 {
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: scale3d(0.8,0.8,1);
+    transform: scale3d(0.8,0.8,1);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+
+figure.effect-duke p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 20px;
+    padding: 25px;
+    color: #fff;
+    border: 2px solid #fff;
+    text-transform: none;
+    font-size: 90%;
+    opacity: 0;
+    -webkit-transform: scale3d(0.8,0.8,1);
+    transform: scale3d(0.8,0.8,1);
+    -webkit-transform-origin: 50% -100%;
+    transform-origin: 50% -100%;
+}
+
+figure.effect-duke:hover h2,
+figure.effect-duke:hover p {
+    opacity: 1;
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+}
+
+/* Media queries */
+@media screen and (max-width: 50em) {
+    .content {
+        padding: 0 10px;
+        text-align: center;
+    }
+    .grid figure {
+        display: inline-block;
+        float: none;
+        margin: 10px auto;
+        width: 100%;
+    }
+}
+/* кінець блока наших робіт */
+
+
+/* Блок послідовності */
+.page-header h1{
+    margin-top: 70px;
+        font-weight: inherit;
+    font-size: 260%;
+    color: #02d871;
     text-align: center;
-    margin-top: 10px;
+    margin-bottom: 50px;
 }
-.container h1 {
-    font-size: 36px;
-    text-transform: uppercase;
-    color: #cccccc;
-    text-align: center;
-    margin: 30px 0;
+.timeline {
+  list-style: none;
+  padding: 20px 0 20px;
+  position: relative;
 }
-#gallery {
-    margin-bottom: 160px;
+.timeline:before {
+  top: 45px;
+  bottom: 235px;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #e0e0e0;
+  left: 50%;
+  margin-left: -1.5px;
 }
-#gallery:after { 
-   content: '';
-   display: block; 
-   height: 0; 
-   clear: both;
+.timeline > li {
+  margin-bottom: 20px;
+  position: relative;
 }
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+.timeline > li:after {
+  clear: both;
+}
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+.timeline > li:after {
+  clear: both;
+}
+.timeline > li > .timeline-panel {
+    background: #fff;
+  width: 39%;
+  float: left;
+  border: 1px solid #d4d4d4;
+  border-radius: 2px;
+  padding: 20px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+.timeline > li > .timeline-panel:before {
+  position: absolute;
+  top: 23px;
+  right: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  content: " ";
+}
+.timeline > li > .timeline-panel:after {
+  position: absolute;
+  top: 27px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+.timeline > li > .timeline-badge {
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.4em;
+  text-align: center;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  margin-left: -25px;
+  background-color: #999999;
+  z-index: 100;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+}
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+.timeline-badge.primary {
+  background-color: #2e6da4 !important;
+}
+.timeline-badge.success {
+  background-color: #3f903f !important;
+}
+.timeline-badge.warning {
+  background-color: #f0ad4e !important;
+}
+.timeline-badge.danger {
+  background-color: #d9534f !important;
+}
+.timeline-badge.info {
+  background-color: #5bc0de !important;
+}
+.timeline-title {
+  margin-top: 0;
+  color: #02d871;
+}
+.timeline-body > p,
+.timeline-body > ul {
+  margin-bottom: 0;
+}
+.timeline-body > p + p {
+  margin-top: 5px;
+}
+/* кінець блока послідовності */

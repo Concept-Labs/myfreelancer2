@@ -1,0 +1,270 @@
+@media screen and (max-width: 1024px) and (min-width: 470px){
+	.bg_top{
+		padding: 270px 0;
+	}
+
+	.header {
+		width: 100%;
+		font-size: 230%;
+		height: auto;
+	}
+	.logo{
+		display: none;
+	}
+	.langbar{
+		font-size: 80%;
+	}
+	.menu {
+		float: none;
+		margin-left: 24%;
+		height: 100px;
+		padding: 0;
+	}
+	.menu_tel {
+		display: none;
+	}
+
+	.car_text {
+		font-size: 150%;
+		text-align: center;
+	}
+	.car_text p{
+		font-size: 200%;
+	}
+	.inf_block_btn {
+		margin-top: 80px;
+		font-size: 250%;
+	}
+
+	.content_resize2{
+		width: 100%;
+	}
+	.development-width {
+		margin: 0 auto;
+		width: 100%;
+	}
+	.development {
+		width: 90%;
+		height: auto;
+		margin: 0 auto;
+		display: block;
+		padding: 50px 30px;
+	}
+	.side_development {
+		float: none;
+		margin: 50px auto;
+		width: 60%;
+		height: 330px;
+		max-height: 300px;
+		text-align: center;
+		padding: 4%;
+		font-size: 270%;
+		background-color: #fff;
+		box-shadow: 0 0 20px rgba(2, 216, 113, 0.33);
+		-webkit-transition: all .6s;
+		-o-transition: all .6s;
+		transition: all .6s;
+	}
+
+	.portfolio {
+		background-color: #F2F2F2;
+		float: left;
+		width: 100%;
+		height: auto;
+		padding-bottom: 40px;
+		font-size: 220%;
+	}
+
+	.pricings p, .portfolio p {
+		padding: 0 80px;
+	}
+	.container {
+		width: 95%;
+		max-width: 990px;
+		margin: 30px auto;
+		color: #6E6E6E;
+	}
+	.cont_img {
+		height: auto;
+		width: 60%;
+		margin: 70px auto;
+		float: none;
+	}
+	.cont_img img {
+		height: auto;
+		width: 100%;
+	}
+	.cont_content {
+		width: 95%;
+		margin-left: 80px;
+		float: none;
+
+	}
+
+	.pricings, .sequence {
+		width: 100%;
+		font-size: 220%;
+		padding-bottom: 100px;
+	}
+	.price {
+		width: 100%;
+	}
+	.price_con {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.grid {
+		width: 85%;
+		height: auto;
+		float: none;
+		position: relative;
+		max-width: 1000px;
+		list-style: none;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.grid figure {
+		max-width: 100%;
+		max-height: 360px;
+		width: 100%;
+	}
+	.why_us_block {
+		width: 100%;
+	}
+	.why_us {
+		width: 100%;
+		height: auto;
+		float: left;
+		margin: 0 auto;
+		background-image: url(../img/myfreelancer2.jpg);
+		background-attachment: fixed;
+		background-size: cover;
+		background-position: ;
+		padding: 100px 0 100px 0;
+		z-index: 0;
+	}
+	.why_us_title {
+		font-size: 220%;
+	}
+	p.title_p1 {
+		padding-left: 5%;
+	}
+	p.title_p2 {
+		padding-left: 5%;
+	}
+	p.title_p3 {
+		padding-left: 5%;
+	}
+
+	.timeline:before {
+		left: 90%;
+	}
+	.timeline > li > .timeline-badge {
+		left: 90%;
+		width: 70px;
+		height: 70px;
+	}
+	.timeline > li > .timeline-badge h2{
+		line-height: 65px;
+	}
+	.timeline > li > .timeline-panel {
+		width: 78%;
+	}
+	.timeline > li.timeline-inverted > .timeline-panel{
+		float: left;
+	}
+	.timeline > li > .timeline-panel:before {
+		position: absolute;
+		top: 23px;
+		right: -15px;
+		display: inline-block;
+		border-top: 15px solid transparent;
+		border-left: 15px solid #ccc;
+		border-right: 0 solid #ccc;
+		border-bottom: 15px solid transparent;
+		content: " ";
+	}
+	.timeline > li.timeline-inverted > .timeline-panel:before{
+		position: absolute;
+		top: 23px;
+		left: 100%;
+		display: inline-block;
+		border-top: 15px solid transparent;
+		border-left: 15px solid #ccc;
+		border-right: 0 solid #ccc;
+		border-bottom: 15px solid transparent;
+		content: " ";
+	}
+	.timeline > li.timeline-inverted > .timeline-panel:after{
+		position: absolute;
+		top: 27px;
+		left: 100%;
+		display: inline-block;
+		border-top: 14px solid transparent;
+		border-left: 14px solid #fff;
+		border-right: 0 solid #fff;
+		border-bottom: 14px solid transparent;
+		content: " ";
+	}
+
+
+	.contact_form {
+		width: 100%;
+		font-size: 220%;
+		padding-bottom: 50px;
+	}
+	.con_block {
+		width: 100%;
+	}
+	.con_left {
+		width: 86%;
+	}
+	.con_left input, .con_left textarea {
+		background: #000;
+		border-radius: 5px;
+		width: 38.6%;
+		padding: 4%;
+		border: 0px;
+		opacity: .7;
+		transition: all .5s;
+		outline: none;
+		color: #bae1cec7;
+	}
+	.con_left textarea {
+		background: #000;
+		border-radius: 5px;
+		width: 89.5%;
+		padding: 4%;
+		border: 0px;
+	}
+	.con_right {
+		float: none;
+		width: 100%;
+	}
+	.connect, .address {
+		width: 45%;	
+		margin-left: 40px;
+	}
+	.fab {
+		border: 0;
+		color: #fff;
+		border-radius: 100%;
+		display: inline-block !important;
+		width: 66px;
+		height: 64px;
+		line-height: 65px;
+		text-align: center;
+		padding: 0;
+	}
+
+	.footer {
+		float: left;
+		width: 100%;
+		height: auto;
+		text-align: center;
+	}
+	.fot-left {
+		margin: 35px 0 0 0;
+		width: 100%;
+	}
+}

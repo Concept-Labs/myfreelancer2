@@ -3,14 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<title>MyFreelancer</title>
+
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
 	<link rel="stylesheet" href="style/style.css">
+
 	<link rel="stylesheet" href="style/header.css">
 	<link rel="stylesheet" href="style/content.css">
 	<link rel="stylesheet" href="style/galery.css">
+	<link rel="stylesheet" href="style/media.css" media="screen">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-	<script type="text/javascript" src="js/upload.js"></script>
-	<script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
 </head>
 <body>
 	<div class="bg_top">
@@ -36,7 +38,9 @@
 								<li><a href="#">Про нас</a></li>
 								<li><a href="#">Наші роботи</a></li>
 								<li><a href="#">Контакти</a></li>
+									<span class="menu_tel"><i class="fas fa-phone"></i>  +380 (97) 851 97 94</span>
 							</ul>
+
 						</div>
 					</div>
 				</div>
@@ -108,27 +112,35 @@
 						<div class="price">
 							<div class="price_con">
 								<div class="works_block">
-									<div class="img_block">
-										<img src="img/1.png" alt="">
+									<div class="grid">
+										<figure class="effect-duke">
+											<img src="img/1.jpg" alt="img01"/>
+											<figcaption>
+												<h2>Мій <span>Методист</span></h2>
+												<p>Інформаційний сайт, за допомогою якого ви можете інформувати відвідувачів.</p>
+												<a href="#">View more</a>
+											</figcaption>			
+										</figure>
 									</div>
-									<div class="title-block">
-
+									<div class="grid grid3">
+										<figure class="effect-duke">
+											<img src="img/2.jpg" alt="img01"/>
+											<figcaption>
+												<h2>Агро <span>База</span></h2>
+												<p>Інтернет-магазин, де проводиться прямий продаж товарів.</p>
+												<a href="#">View more</a>
+											</figcaption>			
+										</figure>
 									</div>
-								</div>
-								<div class="works_block">
-									<div class="img_block">
-										<img src="img/2.png" alt="">
-									</div>
-									<div class="title-block">
-
-									</div>
-								</div>
-								<div class="works_block">
-									<div class="img_block">
-										<img src="img/3.png" alt="">
-									</div>
-									<div class="title-block">
-
+									<div class="grid">
+										<figure class="effect-duke">
+											<img src="img/3.jpg" alt="img01"/>
+											<figcaption>
+												<h2>Гуртова <span>База</span></h2>
+												<p>Сайт-програма на якій розміщуються ваші бізнес обрахування та збереження даних. </p>
+												<a href="#">View more</a>
+											</figcaption>			
+										</figure>
 									</div>
 								</div>
 							</div>
@@ -149,6 +161,73 @@
 						</div>
 						
 					</div>
+					<div class="sequence">
+						<div class="container">
+							<div class="page-header">
+								<h1 id="timeline">Послідовність співпраці з нами</h1>
+							</div>
+							<ul class="timeline">
+								<li>
+									<div class="timeline-badge"><h2>1</h2></div>
+									<div class="timeline-panel">
+										<div class="timeline-heading">
+											<h4 class="timeline-title">Розуміння про те чи ми вам підходимо?</h4>
+											<p><small class="text-muted">Жодного випадку про невиконаний до кінця проект.</small></p>
+										</div>
+										<br>
+										<div class="timeline-body">
+											<p>Після перегляду вами нашого сайта, Ви складаєте аналіз оцінку про те чи саме від нас Вам потрібна робота.</p>
+										</div>
+									</div>
+								</li>
+								<li class="timeline-inverted">
+									<div class="timeline-badge warning"><h2>2</h2></div>
+									<div class="timeline-panel">
+										<div class="timeline-heading">
+											<h4 class="timeline-title">Зв'яжіться з нами!</h4>
+										</div>
+										<div class="timeline-body">
+											<p>Зв'язаться з нами Ви можете внизу сайта в контактній формі, або ж зателефонавути нам на гарячу лінію.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="timeline-badge danger"><h2>3</h2></div>
+									<div class="timeline-panel">
+										<div class="timeline-heading">
+											<h4 class="timeline-title">Обговорення вашого проета!</h4>
+										</div>
+										<div class="timeline-body">
+											<p>Після обговорення з</p>
+										</div>
+									</div>
+								</li>	
+									<li class="timeline-inverted">
+										<div class="timeline-badge info"><h2>4</h2></div>
+										<div class="timeline-panel">
+										<div class="timeline-heading">
+											<h4 class="timeline-title">Mussum ipsum cacilds</h4>
+										</div>
+										<div class="timeline-body">
+											<p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+										</div>
+									</div>
+									</li>
+								<li>
+									<div class="timeline-badge success"><h2>5</h2></div>
+									<div class="timeline-panel">
+										<div class="timeline-heading">
+											<h4 class="timeline-title">Mussum ipsum cacilds</h4>
+										</div>
+										<div class="timeline-body">
+											<p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				
 					<div class="contact_form">
 						<div class="con_block">
 							<div class="con_left">
@@ -190,6 +269,7 @@
 
 					</div>
 				</div>	
+				
 
 
 

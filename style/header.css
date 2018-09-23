@@ -28,11 +28,17 @@
 	width: 230px;
 	height: auto;
 }
-
+.menu_tel{
+	font-size: 80%;
+	margin-left: 80px;	
+}
+.menu_tel i{
+	color: #02d871;	
+}
 .menu{
 	float: right;
 	height: 67px;
-	padding:0 250px 0 0;
+	padding:0 30px 0 0;
 }
 
 .menu li{
