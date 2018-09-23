@@ -225,18 +225,19 @@
 	.con_left input, .con_left textarea {
 		background: #000;
 		border-radius: 5px;
-		width: 38.6%;
+		width: 37.6%;
 		padding: 4%;
 		border: 0px;
 		opacity: .7;
 		transition: all .5s;
 		outline: none;
 		color: #bae1cec7;
+		font-size: 100%;
 	}
 	.con_left textarea {
 		background: #000;
 		border-radius: 5px;
-		width: 89.5%;
+		width: 87.5%;
 		padding: 4%;
 		border: 0px;
 	}
