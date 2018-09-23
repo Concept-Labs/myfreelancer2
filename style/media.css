@@ -223,9 +223,10 @@
 		width: 86%;
 	}
 	.con_left input, .con_left textarea {
+		margin-top: 5px;
 		background: #000;
 		border-radius: 5px;
-		width: 37.6%;
+		width: 87.6%;
 		padding: 4%;
 		border: 0px;
 		opacity: .7;
@@ -241,10 +242,14 @@
 		padding: 4%;
 		border: 0px;
 	}
+	input.eml {
+		margin-left: 0px; 
+	}
 
 	.con_left input[type="submit"] {
 		font-size: 110%;
-		padding: 15px;
+		padding: 4%;
+		width: 95.6%;
 	}
 	.con_right {
 		float: none;
@@ -271,6 +276,7 @@
 		width: 100%;
 		height: auto;
 		text-align: center;
+		font-size: 90%;
 	}
 	.fot-left {
 		margin: 35px 0 0 0;
