@@ -1,0 +1,30 @@
+<html doctype="html">
+<head>
+    <title>{{$title}}</title>
+    <meta name="title" content="{{$title}}" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta description="услуги вашой фирмы компании" keywords="ключевые слова">
+    {{$headfiles}}
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/media.css" media="screen">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript">
+       $(document).ready(function(){
+        $("#menu, #more").on("click","a", function (event) {
+            event.preventDefault();
+            var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top}, 800);
+        });
+    });
+</script>
+</head>
+<body>
+
+    {{$header}}
+    {{$content}}
+    {{$footer}}
+
+</body>
+</html>

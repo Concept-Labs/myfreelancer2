@@ -1,0 +1,24 @@
+<?php
+if (isset($_SESSION['lang'])) {
+    if ($_SESSION['lang'] == 'ru') {
+        require('language/ru/templates/header/menu.phtml');
+    }
+    if ($_SESSION['lang'] == 'en') {
+        require('language/en/templates/header/menu.phtml');
+    }
+    if ($_SESSION['lang'] == 'ua') {
+        require('language/ua/templates/header/menu.phtml');
+    }
+} else {
+    require('language/ru/templates/header/menu.phtml');
+}
+?>
+<div class="menu" id="menu">
+    <ul>
+        <li><a href="#oncl"><i class="fas fa-home"></i></a></li>
+        <li><a href="#about"><?php echo $about; ?></a></li>
+        <li><a href="#works"><?php echo $works; ?></a></li>
+        <li><a href="#contact"><?php echo $contact; ?></a></li>
+        <span class="menu_tel"><i class="fas fa-phone"></i>  +380 (97) 851 97 94</span>
+    </ul>
+</div>
