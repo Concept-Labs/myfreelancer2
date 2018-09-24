@@ -16,7 +16,7 @@
 </head>
 <body>
 	<div class="content_resize">
-		<div class="header">
+		<div id="header" class="header">
 			<div class="logo">
 				<a href="#"><img src="img/logo.png" alt="Logo"></a>
 			</div>
