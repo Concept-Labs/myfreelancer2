@@ -327,38 +327,27 @@ p.right{
 	margin-right: 50px;
 }
 
-.connect, .address{
-	width: 100%;
-	height: auto;
-	float: left;
-}
-.connect a{
-	margin-bottom: 20px;
-	float: left;
-	text-decoration: none;
-	font-size: 130%;
+.contact-left a, .contact-left ul{
+	font: normal 100% 'century gothic', arial;
+	-webkit-transition: all .4s;
+	-moz-transition: all .4s;
+	transition: all .4s;
 	color: #bae1cec7;
-	transition: .5s all;
 }
-.connect a:hover{
+.contact-left i {
+	margin-right: 15px;
+}
+.contact-left ul{
+	width: 120px;
+	list-style-type: none;
+	cursor: pointer;
+}
+.contact-left a:hover, .contact-left ul:hover{
 	color: #02d871;
 }
 
-.contact-left{
-	float: left;
-}
-.contact-right{
-	float: right;
-}
-
-.connect img{
-	padding-top: 10px;
-}
-.connect div a i {
-	margin-right: 10px;
-}
-
-.connect div a i.fab{
+.contact-left i.fab{
+	font-size: 140%;
 	border: 0;
 	color: #fff;
 	border-radius: 100%;
@@ -369,6 +358,48 @@ p.right{
 	text-align: center;
 	padding: 0;
 }
+i.fab:hover{
+	opacity: .6;
+}
+.fa-telegram-plane{
+	background: #0088cc;
+}
+.fa-viber{
+	background: #59267c;
+}
+.fa-skype{
+	background: #00aff0;
+}
+
+
+
+ul.save-right{
+
+	cursor: pointer;
+}
+li.hover-save{
+	position: relative;
+}
+ul.subsave{
+	-webkit-transition: all .2s;
+	-moz-transition: all .2s;
+	transition: all .2s;
+	background: #1C1C1C;
+	margin-left: 50px;
+	width:150px;  
+	height: 50px;
+	position: absolute;  
+	z-index: 200;
+	visibility: hidden;
+	opacity: 0;
+}
+ul.save-right:hover ul.subsave{
+	opacity: 1;
+	visibility: visible;
+}
+
+
+
 i.fab:hover{
 	opacity: .8;
 }
@@ -396,3 +427,4 @@ i.fab:hover{
 	width: 50%;
 	
 }
+
