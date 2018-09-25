@@ -47,13 +47,13 @@ Class Controller_Index Extends Controller_Base
         $stan_massage = $data['stan_massage'];
 
         if (empty($name_client)) {
-          $errors = 'Заповніть поле "'.$conctakt_name.'"!';
+          $errors = 'Заповніть поле імя!';
         }
         elseif (empty($email_client)) {
-          $errors = 'Заповніть поле "'.$conctakt_email.'"!';
+          $errors = 'Заповніть поле email!';
         }
         elseif (empty($coment_client)) {
-          $errors = 'Заповніть поле "'.$conctakt_comment.'"!';
+          $errors = 'Заповніть поле текст!';
         }
 
         if (empty($errors)) {
@@ -63,6 +63,8 @@ Class Controller_Index Extends Controller_Base
         }
 
     }
+
+    $template->set('errors', $errors);
 
     $this->_renderLayout($template);
 }

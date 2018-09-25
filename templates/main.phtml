@@ -15,220 +15,227 @@ if (isset($_SESSION['lang'])) {
 ?>
 
 <div class="bg_top" id="oncl">
-			<div class="carousel_text">
-				<div class="car_text">
-					<p><?php echo $slogan; ?></p>
-					<h1>MY<span>FREELANCER</span></h1>
-					<p class="slogan"><?php echo $pod_slogan; ?></p>
+	<div class="carousel_text">
+		<div class="car_text">
+			<p><?php echo $slogan; ?></p>
+			<h1>MY<span>FREELANCER</span></h1>
+			<p class="slogan"><?php echo $pod_slogan; ?></p>
+		</div>
+		<div class="car_text inf_block_btn" id="more">
+			<a href="#learnmore" class="inform_btn">ВЗНАТИ БІЛЬШЕ</a>
+		</div>
+	</div>
+</div>
+<div class="bg_bottom">
+	<div class="development">
+		<div class="development-width">	
+			<div class="side_development">
+				<h1><i class="fas fa-thumbs-up"></i></h1>
+				<p><?php echo $qualitatively; ?></p>
+			</div>
+			<div class="side_development">
+				<h1><i class="far fa-clock"></i></h1>
+				<p><?php echo $fast; ?></p>
+			</div>
+			<div class="side_development">
+				<h1><i class="fas fa-money-bill-alt"></i></h1>
+				<p><?php echo $cheap; ?></p>
+			</div>
+		</div>
+	</div>
+	<div class="content_resize2" id="learnmore">
+		<div class="portfolio" id="about">
+			<div class="portfol_con">
+				<h1><?php echo $about; ?></h1>
+				<br>
+
+				<p><?php echo $about_bottom; ?></p>
+			</div>
+
+			<div class="container">
+				<div class="cont_img">
+					<img src="img/Без назви-2.png" alt="Ескиз на ПК">
+				</div>					
+				<div class="cont_content">
+					<ul>
+						<li><?php echo $site3;?>
+							<p><?php echo $description_site3;?> </p>
+						</li>
+						<li><?php echo $site2;?>
+							<p><?php echo $description_site2;?></p>
+						</li>
+						<li><?php echo $site1;?>
+							<p><?php echo $description_site1;?></p>
+						</li>
+					</ul>
 				</div>
-				<div class="car_text inf_block_btn" id="more">
-					<a href="#learnmore" class="inform_btn">ВЗНАТИ БІЛЬШЕ</a>
+			</div>	
+		</div>
+		<div class="pricings" id="works">
+			<div class="pric_title">
+				<h1><?php echo $our_works;?></h1>
+				<p><?php echo $description_work;?></p>
+			</div>
+			<br>
+			<br>
+			<div class="price">
+				<div class="price_con">
+					<div class="works_block">
+						<div class="grid">
+							<figure class="effect-duke">
+								<img src="img/1.jpg" alt="img01"/>
+								<figcaption>
+									<h2><?php echo $name_site1;?></h2>
+									<p><?php echo $description_name_site1;?></p>
+									<a href="#">View more</a>
+								</figcaption>			
+							</figure>
+						</div>
+						<div class="grid grid3">
+							<figure class="effect-duke">
+								<img src="img/2.jpg" alt="img01"/>
+								<figcaption>
+									<h2><?php echo $name_site2;?></h2>
+									<p><?php echo $description_name_site2;?></p>
+									<a href="#">View more</a>
+								</figcaption>			
+							</figure>
+						</div>
+						<div class="grid">
+							<figure class="effect-duke">
+								<img src="img/3.jpg" alt="img01"/>
+								<figcaption>
+									<h2><?php echo $name_site3;?></h2>
+									<p><?php echo $description_name_site3;?> </p>
+									<a href="#">View more</a>
+								</figcaption>			
+							</figure>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="why_us_block">
+			<div class="why_us">
+				<div class="why_us_title">
+					<h1><?php echo $argument;?></h1>
+					<br>
+					<p class="title_p1"><?php echo $argument_description3;?></p>
+					<br>
+					<p class="title_p2"><?php echo $argument_description2;?></p>
+					<br>
+					<p class="title_p3"><?php echo $argument_description1;?></p>
+				</div>
+
+			</div>
+
+		</div>
+		<div class="sequence">
+			<div class="container">
+				<div class="page-header">
+					<h1 id="timeline"><?php echo $sequence;?></h1>
+				</div>
+				<ul class="timeline">
+					<li>
+						<div class="timeline-badge"><h2>1</h2></div>
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h4 class="timeline-title"><?php echo $sequence_item_1;?></h4>
+								<p><small class="text-muted"><?php echo $sequence_item_1_1;?></small></p>
+							</div>
+							<br>
+							<div class="timeline-body">
+								<p><?php echo $sequence_item_1_2;?></p>
+							</div>
+						</div>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-badge warning"><h2>2</h2></div>
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h4 class="timeline-title"><?php echo $sequence_item_2;?></h4>
+							</div>
+							<div class="timeline-body">
+								<p><?php echo $sequence_item_2_1;?></p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="timeline-badge danger"><h2>3</h2></div>
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h4 class="timeline-title"><?php echo $sequence_item_3;?></h4>
+							</div>
+							<div class="timeline-body">
+								<p><?php echo $sequence_item_3_1;?></p>
+							</div>
+						</div>
+					</li>	
+					<li class="timeline-inverted">
+						<div class="timeline-badge info"><h2>4</h2></div>
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h4 class="timeline-title"><?php echo $sequence_item_4;?></h4>
+							</div>
+							<div class="timeline-body">
+								<p><?php echo $sequence_item_4_1;?></p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="timeline-badge success"><h2>5</h2></div>
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h4 class="timeline-title"><?php echo $sequence_item_5;?></h4>
+							</div>
+							<div class="timeline-body">
+								<p><?php echo $sequence_item_5_1;?></p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="contact_form" id="contact">
+			<div class="con_block">
+				<div class="con_left">
+					<h1><?php echo $conctakt_form;?></h1>
+					<p><?php echo $conctakt_description;?></p>
+					<?php $errors = $this->get('errors');
+					if (!empty($errors)) { ?>
+					<div>
+						<span style="color:red	;"><?php echo $errors; ?></span>
+					</div> 
+					<?php } ?>
+					
+					<form action="/index" method="post">
+						<input type="text" name="name" text="" placeholder=" <?php echo $conctakt_name;?>">
+						<input type="text" name="email" placeholder=" <?php echo $conctakt_email;?>" class="eml"> <br/><br/>
+						<textarea name="coment" id="" cols="30" rows="13" placeholder=" <?php echo $conctakt_comment;?>"></textarea>
+						<input type="hidden" name="date" value="<?php echo date('Y-m-d') ?>" />
+						<input type="hidden" name="time" value="<?php echo date('H:i:s') ?>" />
+						<input type="hidden" name="stan_massage" value="Непрочитано" />
+						<br/><br/>
+						<input type="submit" name="send" value="<?php echo $conctakt_send;?>">
+					</form>
+				</div>
+				<div class="con_right">
+					<div class="address">
+						<h1><?php echo $our_address;?></h1>
+						<p><?php echo $city1;?><br/> <?php echo $phone;?>: +38-(097)-851-97-94</p>
+						<br/>
+						<p><?php echo $city2;?><br/> <?php echo $phone;?>: +38-(097)-486-53-45</p>
+					</div>
+					<div class="connect">
+						<h1><?php echo $conect;?></h1>
+						<div class="contact-left">
+							<a href="#"><i class="fab fa-skype"></i>Skype</a><br/><br/>
+							<a href="#"><i class="fab fa-telegram-plane"></i>Telegram</a><br/><br/>
+							<a href="#"><i class="fab fa-viber"></i>Viber</a>
+						</div>
+
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="bg_bottom">
-			<div class="development">
-				<div class="development-width">	
-					<div class="side_development">
-						<h1><i class="fas fa-thumbs-up"></i></h1>
-						<p><?php echo $qualitatively; ?></p>
-					</div>
-					<div class="side_development">
-						<h1><i class="far fa-clock"></i></h1>
-						<p><?php echo $fast; ?></p>
-					</div>
-					<div class="side_development">
-						<h1><i class="fas fa-money-bill-alt"></i></h1>
-						<p><?php echo $cheap; ?></p>
-					</div>
-				</div>
-			</div>
-			<div class="content_resize2" id="learnmore">
-				<div class="portfolio" id="about">
-					<div class="portfol_con">
-						<h1><?php echo $about; ?></h1>
-						<br>
-
-						<p><?php echo $about_bottom; ?></p>
-					</div>
-
-					<div class="container">
-						<div class="cont_img">
-							<img src="img/Без назви-2.png" alt="Ескиз на ПК">
-						</div>					
-						<div class="cont_content">
-							<ul>
-								<li><?php echo $site3;?>
-									<p><?php echo $description_site3;?> </p>
-								</li>
-								<li><?php echo $site2;?>
-									<p><?php echo $description_site2;?></p>
-								</li>
-								<li><?php echo $site1;?>
-									<p><?php echo $description_site1;?></p>
-								</li>
-							</ul>
-						</div>
-					</div>	
-				</div>
-				<div class="pricings" id="works">
-					<div class="pric_title">
-						<h1><?php echo $our_works;?></h1>
-						<p><?php echo $description_work;?></p>
-					</div>
-					<br>
-					<br>
-					<div class="price">
-						<div class="price_con">
-							<div class="works_block">
-								<div class="grid">
-									<figure class="effect-duke">
-										<img src="img/1.jpg" alt="img01"/>
-										<figcaption>
-											<h2><?php echo $name_site1;?></h2>
-											<p><?php echo $description_name_site1;?></p>
-											<a href="#">View more</a>
-										</figcaption>			
-									</figure>
-								</div>
-								<div class="grid grid3">
-									<figure class="effect-duke">
-										<img src="img/2.jpg" alt="img01"/>
-										<figcaption>
-											<h2><?php echo $name_site2;?></h2>
-											<p><?php echo $description_name_site2;?></p>
-											<a href="#">View more</a>
-										</figcaption>			
-									</figure>
-								</div>
-								<div class="grid">
-									<figure class="effect-duke">
-										<img src="img/3.jpg" alt="img01"/>
-										<figcaption>
-											<h2><?php echo $name_site3;?></h2>
-											<p><?php echo $description_name_site3;?> </p>
-											<a href="#">View more</a>
-										</figcaption>			
-									</figure>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>	
-				<div class="why_us_block">
-					<div class="why_us">
-						<div class="why_us_title">
-							<h1><?php echo $argument;?></h1>
-							<br>
-							<p class="title_p1"><?php echo $argument_description3;?></p>
-							<br>
-							<p class="title_p2"><?php echo $argument_description2;?></p>
-							<br>
-							<p class="title_p3"><?php echo $argument_description1;?></p>
-						</div>
-
-					</div>
-
-				</div>
-				<div class="sequence">
-					<div class="container">
-						<div class="page-header">
-							<h1 id="timeline"><?php echo $sequence;?></h1>
-						</div>
-						<ul class="timeline">
-							<li>
-								<div class="timeline-badge"><h2>1</h2></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h4 class="timeline-title"><?php echo $sequence_item_1;?></h4>
-										<p><small class="text-muted"><?php echo $sequence_item_1_1;?></small></p>
-									</div>
-									<br>
-									<div class="timeline-body">
-										<p><?php echo $sequence_item_1_2;?></p>
-									</div>
-								</div>
-							</li>
-							<li class="timeline-inverted">
-								<div class="timeline-badge warning"><h2>2</h2></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h4 class="timeline-title"><?php echo $sequence_item_2;?></h4>
-									</div>
-									<div class="timeline-body">
-										<p><?php echo $sequence_item_2_1;?></p>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="timeline-badge danger"><h2>3</h2></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h4 class="timeline-title"><?php echo $sequence_item_3;?></h4>
-									</div>
-									<div class="timeline-body">
-										<p><?php echo $sequence_item_3_1;?></p>
-									</div>
-								</div>
-							</li>	
-							<li class="timeline-inverted">
-								<div class="timeline-badge info"><h2>4</h2></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h4 class="timeline-title"><?php echo $sequence_item_4;?></h4>
-									</div>
-									<div class="timeline-body">
-										<p><?php echo $sequence_item_4_1;?></p>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="timeline-badge success"><h2>5</h2></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h4 class="timeline-title"><?php echo $sequence_item_5;?></h4>
-									</div>
-									<div class="timeline-body">
-										<p><?php echo $sequence_item_5_1;?></p>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="contact_form" id="contact">
-					<div class="con_block">
-						<div class="con_left">
-							<h1><?php echo $conctakt_form;?></h1>
-							<p><?php echo $conctakt_description;?></p>
-							<form action="/index" method="post">
-								<input type="text" name="name" text="" placeholder=" <?php echo $conctakt_name;?>">
-								<input type="text" email="" placeholder=" <?php echo $conctakt_email;?>" class="eml"> <br/><br/>
-								<textarea name="" id="" cols="30" rows="13" placeholder=" <?php echo $conctakt_comment;?>"></textarea>
-								<input type="hidden" name="date" value="<?php echo date('Y-m-d') ?>" />
-								<input type="hidden" name="time" value="<?php echo date('H:i:s') ?>" />
-								<input type="hidden" name="stan_massage" value="Непрочитано" />
-						 		<br/><br/>
-								<input type="submit" value="<?php echo $conctakt_send;?>">
-							</form>
-						</div>
-						<div class="con_right">
-							<div class="address">
-								<h1><?php echo $our_address;?></h1>
-								<p><?php echo $city1;?><br/> <?php echo $phone;?>: +38-(097)-851-97-94</p>
-							<br/>
-							<p><?php echo $city2;?><br/> <?php echo $phone;?>: +38-(097)-486-53-45</p>
-							</div>
-							<div class="connect">
-								<h1><?php echo $conect;?></h1>
-								<div class="contact-left">
-									<a href="#"><i class="fab fa-skype"></i>Skype</a><br/><br/>
-									<a href="#"><i class="fab fa-telegram-plane"></i>Telegram</a><br/><br/>
-									<a href="#"><i class="fab fa-viber"></i>Viber</a>
-								</div>
-
-							</div>
-						</div>
-					</div>
-				</div>
