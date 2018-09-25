@@ -1,0 +1,57 @@
+/* Блок авторизації */
+div.authorization-block{
+	background: #1C1C1C;
+	padding: 2%;
+	width: 30%;
+	margin: 130px auto;
+	text-align: center;
+	border-radius: 5px;
+	-webkit-box-shadow: 1px 1px 30px 0px rgba(48, 50, 50, 1);
+	-moz-box-shadow:    1px 1px 30px 0px rgba(48, 50, 50, 1);
+	box-shadow:         1px 1px 30px 0px rgba(48, 50, 50, 1);
+}
+div.authorization-block img{
+	max-width: 20%;
+	margin-bottom: 30px;
+}
+
+div.authorization-block input{
+	color: #bae1cec7;
+	width: 60%;
+	max-width: 100%;
+	padding: 1.5%;
+	border: 0px;
+	border-radius: 5px;
+	background: #000;
+	opacity: .5;
+	-webkit-transition: all .4s;
+	-moz-transition: all .4s;
+	transition: all .4s;
+}
+div.authorization-block input[type="submit"]{
+	padding: 1.5%;
+	background: #02d871;
+	color: #fff;
+	width: 30%;
+	cursor: pointer;
+	opacity: .9;
+}
+div.authorization-block input[type="submit"]:hover{
+	background: #008d49;
+}
+
+div.authorization-block input:focus{
+	opacity: 1;
+	outline: none;
+}
+
+.authorization-error{
+	background-color: red;
+	text-align: center;
+	margin: 0 auto;
+	color: #fff;
+	width: 140px;
+	padding: 10px 5px;
+	border-radius: 0 0 5px 5px;
+	font: normal 90% 'century gothic', arial;
+}

@@ -283,7 +283,7 @@ input.eml{
 .con_left input, .con_left textarea{
 	background: #000;
 	border-radius: 5px;
-	width: 40%;
+	width: 46.5%;
 	padding: 2%;	
 	border: 0px;
 	opacity: .7;
@@ -298,7 +298,7 @@ input.eml{
 .con_left textarea{
 	background: #000;
 	border-radius: 5px;
-	width: 90.5%;
+	width: 100%;
 	padding: 2%;	
 	border: 0px;
 }
@@ -358,7 +358,7 @@ p.right{
 	margin-right: 10px;
 }
 
-.fab{
+.connect div a i.fab{
 	border: 0;
 	color: #fff;
 	border-radius: 100%;

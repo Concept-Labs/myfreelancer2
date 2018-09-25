@@ -13,12 +13,13 @@
 	}
 	.langbar{
 		font-size: 80%;
+		float: left;
 	}
 	.menu {
-		float: none;
-		margin-left: 24%;
+		margin-right: 2%;
 		height: 100px;
 		padding: 0;
+		float: right;
 	}
 	ul.sub-lang {
 		font-size: 120%;
@@ -32,7 +33,7 @@
 	}
 
 	.car_text {
-		font-size: 150%;
+		font-size: 130%;
 		text-align: center;
 	}
 	.car_text p{
@@ -40,11 +41,13 @@
 	}
 	.inf_block_btn {
 		margin-top: 80px;
-		font-size: 250%;
+		font-size: 230%;
 	}
 
 	.content_resize2{
 		width: 100%;
+		font-size: 90%;
+		height: auto;
 	}
 	.development-width {
 		margin: 0 auto;
@@ -224,18 +227,26 @@
 		width: 100%;
 		font-size: 220%;
 		padding-bottom: 50px;
+		padding: 3%;
 	}
 	.con_block {
 		width: 100%;
+		padding: 3%;
 	}
 	.con_left {
-		width: 86%;
+		width: 90%;
+		height: auto;
+		padding: 0;
+	}
+	.con_left form{
+		width: 97%;
+		height: auto;
 	}
 	.con_left input, .con_left textarea {
 		margin-top: 5px;
 		background: #000;
 		border-radius: 5px;
-		width: 87.6%;
+		width: 100%;
 		padding: 4%;
 		border: 0px;
 		opacity: .7;
@@ -247,7 +258,7 @@
 	.con_left textarea {
 		background: #000;
 		border-radius: 5px;
-		width: 87.5%;
+		width: 100%;
 		padding: 4%;
 		border: 0px;
 	}
@@ -258,24 +269,24 @@
 	.con_left input[type="submit"] {
 		font-size: 110%;
 		padding: 4%;
-		width: 95.6%;
+		width: 100%;
 	}
 	.con_right {
 		float: none;
-		width: 100%;
+		width: 90%;
 	}
 	.connect, .address {
 		width: 45%;	
 		margin-left: 40px;
 	}
-	.fab {
+	.connect div a i.fab {
 		border: 0;
 		color: #fff;
 		border-radius: 100%;
 		display: inline-block !important;
-		width: 66px;
-		height: 64px;
-		line-height: 65px;
+		width: 56px;
+		height: 56px;
+		line-height: 59px;
 		text-align: center;
 		padding: 0;
 	}
