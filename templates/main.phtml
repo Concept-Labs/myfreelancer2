@@ -198,17 +198,25 @@ if (isset($_SESSION['lang'])) {
 		</div>
 
 		<div class="contact_form" id="contact">
-			<div class="con_block">
+			<div class="con_block" id="messege">
 				<div class="con_left">
 					<h1><?php echo $conctakt_form;?></h1>
 					<p><?php echo $conctakt_description;?></p>
-					<?php $errors = $this->get('errors');
-					if (!empty($errors)) { ?>
 					<div>
-						<span style="color:red	;"><?php echo $errors; ?></span>
-					</div> 
-					<?php } ?>
-					
+						<?php $errors = $this->get('errors');
+						$send = $this->get('send');
+						if (!empty($errors) || !empty($send)) { ?>
+						<a href="#messege" id="mess"></a>
+						<script type="text/javascript">
+							document.getElementById("mess").click();
+						</script>
+						<?php if (!empty($errors)) { ?>
+						<span style="color:red;"><?php echo $errors; ?></span>				 
+						<?php  } 
+						else { ?>
+						<span style="color:green;"><?php echo $send; ?></span>				 
+						<?php } } ?>
+					</div>
 					<form action="/index" method="post">
 						<input type="text" name="name" text="" placeholder=" <?php echo $conctakt_name;?>">
 						<input type="text" name="email" placeholder=" <?php echo $conctakt_email;?>" class="eml"> <br/><br/>
@@ -217,7 +225,7 @@ if (isset($_SESSION['lang'])) {
 						<input type="hidden" name="time" value="<?php echo date('H:i:s') ?>" />
 						<input type="hidden" name="stan_massage" value="Непрочитано" />
 						<br/><br/>
-						<input type="submit" name="send" value="<?php echo $conctakt_send;?>">
+						<input type="submit" name="send" onclick="errore()" value="<?php echo $conctakt_send;?>">
 					</form>
 				</div>
 
