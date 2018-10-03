@@ -22,7 +22,7 @@ a{
 	background-repeat: no-repeat;
 	z-index: 0;
 	width: 100%;
-	padding: 175px 0;
+	height: 100%;
 	color: #fff;
 	overflow: hidden;
 	
@@ -37,6 +37,7 @@ a{
 
 
 .car_text{
+	margin-top: 230px;
 	letter-spacing: 3px;
 	text-align: center;
 }

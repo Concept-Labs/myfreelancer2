@@ -1,7 +1,4 @@
 @media screen and (max-width: 1024px) and (min-width: 470px){
-	.bg_top{
-		padding: 270px 0;
-	}
 
 	.header {
 		width: 100%;
@@ -33,6 +30,7 @@
 	}
 
 	.car_text {
+		margin-top: 60%;
 		font-size: 130%;
 		text-align: center;
 	}
@@ -172,7 +170,7 @@
 	}
 
 	.timeline:before {
-		left: 90%;
+		left: 91%;
 	}
 	.timeline > li > .timeline-badge {
 		left: 90%;
