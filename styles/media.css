@@ -276,10 +276,14 @@
 		width: 90%;
 	}
 	.connect, .address {
-		width: 45%;	
-		margin-left: 40px;
+		width: 40%;
+		float: left;
+		height: auto;
+		margin-left: 50px;
+		overflow: hidden;
+		padding: 50px 0;
 	}
-	.connect div a i.fab {
+	.connect div  i.fab {
 		border: 0;
 		color: #fff;
 		border-radius: 100%;
@@ -290,7 +294,10 @@
 		text-align: center;
 		padding: 0;
 	}
-
+	
+	.contact-left ul {
+		width: 200px;
+	}
 	.footer {
 		float: left;
 		width: 100%;

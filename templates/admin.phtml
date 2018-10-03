@@ -62,10 +62,12 @@ $errorsl = $this->get('errorsl');
 			if (isset($_GET['message'])) {
 				$roww = $this->get('roww');?>
 				<div class="content position-table message-block">
-					<h2><?php echo $roww['name_client']; ?></h2><br><hr>
-					<h4 class="left-position"><?php echo $roww['email_client']; ?></h4>
-					<span class="right-position"><?php echo $roww['date'].' о '.$roww['time']; ?></span><br><br>
-					<span><?php echo $roww['coment_client']; ?></span>
+					<div class="message-block-padd">
+						<h2><?php echo $roww['name_client']; ?></h2><br><hr>
+						<h4 class="left-position"><?php echo $roww['email_client']; ?></h4>
+						<span class="right-position"><?php echo $roww['date'].' о '.$roww['time']; ?></span><br><br>
+						<span><?php echo $roww['coment_client']; ?></span>
+					</div>
 				</div>
 				<?php }
 			} 

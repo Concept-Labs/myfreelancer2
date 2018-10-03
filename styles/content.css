@@ -98,7 +98,7 @@ input[type="submit"].sub{
 	letter-spacing: 3px;
 	padding-bottom: 40px;
 	color: #A4A4A4;
-	font-size: 100%;	
+	font-size: 85%;	
 }
 
 
@@ -110,7 +110,7 @@ input[type="submit"].sub{
 	width: 100%;
 	max-width: 990px;
 	margin: 30px auto;
-    color: #6E6E6E;
+	color: #6E6E6E;
 }
 
 .cont_img{
@@ -128,7 +128,7 @@ input[type="submit"].sub{
 	margin-left: 60px;
 	text-align: left;
 	float: left;
-	  font: normal 120% 'century gothic', arial;
+	font: normal 120% 'century gothic', arial;
 }
 .cont_content p{
 	color: #6E6E6E;
@@ -223,7 +223,7 @@ ul.plan li.plan-price-center{
 	float: left;
 	margin: 0 auto;
 	background-image: url(../img/myfreelancer2.jpg) ;
-		background-attachment: fixed;
+	background-attachment: fixed;
 	background-size: cover;
 	background-position: ;
 	padding: 55px 0 55px 0;
@@ -417,10 +417,10 @@ i.fab:hover{
 }
 
 .footer{
-	float: left;
 	width: 1140px;
 	margin: 0 auto;
 	color: #999;
+	overflow: hidden;
 }
 .fot-left{
 	margin-top: 35px;

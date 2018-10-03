@@ -170,7 +170,7 @@ figure.effect-duke:hover p {
 }
 .timeline:before {
   top: 45px;
-  bottom: 235px;
+  bottom: 65px;
   position: absolute;
   content: " ";
   width: 3px;
@@ -271,10 +271,10 @@ figure.effect-duke:hover p {
   background-color: #3f903f !important;
 }
 .timeline-badge.warning {
-  background-color: #f0ad4e !important;
+  background-color: #d9534f !important;
 }
 .timeline-badge.danger {
-  background-color: #d9534f !important;
+   background-color: #f0ad4e !important;
 }
 .timeline-badge.info {
   background-color: #5bc0de !important;

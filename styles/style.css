@@ -4,7 +4,7 @@
 }
 
 body{
-	    font: normal 110% 'century gothic', arial;
+	font: normal 110% 'century gothic', arial;
 	font-size: 14px;
 	line-height: 1.428571429;
 }
@@ -16,15 +16,15 @@ a{
 }
 .bg_top{
 	background-image: url(../img/apple-computer-desk-159643.jpg);
-  	background-attachment: fixed;
-    background-size: cover;
-    background-position: 50% 50%;
-  	background-repeat: no-repeat;
-  	z-index: 0;
-  	width: 100%;
-  	padding: 175px 0;
-    color: #fff;
-    overflow: hidden;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	z-index: 0;
+	width: 100%;
+	padding: 175px 0;
+	color: #fff;
+	overflow: hidden;
 	
 }
 
@@ -37,7 +37,7 @@ a{
 
 
 .car_text{
-	letter-spacing: 5px;
+	letter-spacing: 3px;
 	text-align: center;
 }
 .car_text span{
@@ -51,7 +51,7 @@ a{
 	font-size: 150%;	
 }
 .car_text p.slogan{
-font-size: 250%;
+	font-size: 250%;
 }
 
 .inputfile {
@@ -101,4 +101,39 @@ a.inform_btn{
 a.inform_btn:hover{
 	background: #02d871;
 	color: #fff;
+}
+
+
+/*адмін панель*/
+.position-table{
+	margin-top: 100px;
+	width: 74%;
+	margin: 100px auto;
+}
+.admin-page table{
+	width: 100%;
+	border: 1px solid silver;
+	border-collapse: collapse;
+}
+.admin-page table tr{
+	cursor: pointer;
+}
+.admin-page table td{
+	border: 1px solid silver;
+	padding: 5px 10px;
+}
+tr:hover, .table-top:not(:hover){
+	background-color: #e2e2e2;
+}
+.message-block{
+	border: 1px solid silver;
+}
+.message-block-padd{
+	padding: 2%;
+}
+.left-position{
+	float: left;
+}
+.right-position{
+	float: right;
 }

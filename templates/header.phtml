@@ -22,7 +22,7 @@ if (isset($_SESSION['lang'])) {
 		<div class="langbar">
 			<?php $redirect = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>
 			<form action="/index" method="post" enctype="multipart/form-data">
-				<ul class="lang"><?php echo $language; ?><i class="fas fa-chevron-down"></i>
+				<ul class="lang"><?php echo $language; ?>   <i class="fas fa-chevron-down"></i>
 					<ul class="sub-lang">
 						<li><button type="submit" name="ru" value="ru">Русский</button></li>
 						<li><button type="submit" name="en" value="en">English</button></li>
