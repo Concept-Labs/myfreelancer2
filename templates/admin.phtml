@@ -25,7 +25,13 @@ $errorsl = $this->get('errorsl');
 		<?php }
 		else { ?>
 
-		<?php if (!isset($_GET['message'])) {?>
+		<div>
+			<a href="<?php echo base_url .'admin'; ?>">Повідомлення</a>
+			<a href="<?php echo base_url .'admin/users'; ?>">Користувачі</a>
+		</div>
+		
+
+		<?php if (!isset($_GET['message']) && !isset($_GET['delete'])) {?>
 		<div class="content position-table">
 			<table>
 				<h2>Вхідні повідомлення</h2>
@@ -34,13 +40,14 @@ $errorsl = $this->get('errorsl');
 					<td>Email</td>
 					<td>Повідомлення</td>
 					<td>Дата</td>
+					<td>Дія</td>
 				</tr>
 				<?php while ($row = mysqli_fetch_array($result)) {?>
 				
-				<tr class="<?php if ($row['stan_massage'] == 'Непрочитано') { echo 'unread';} else { echo 'read';}?>" onclick="window.location.href='<?php echo base_url .'/admin?message&id='.$row['id']; ?>'; return false">
-					<td><input type="checkbox"><?php echo ' '.$row['name_client']; ?></td>
-					<td><?php echo $row['email_client']; ?></td>
-					<td><?php $coment_client = $row['coment_client'];
+				<tr class="<?php if ($row['stan_massage'] == 'Непрочитано') { echo 'unread';} else { echo 'read';}?>" >
+					<td onclick="window.location.href='<?php echo base_url .'/admin?message&id='.$row['id']; ?>'; return false"><?php echo ' '.$row['name_client']; ?></td>
+					<td onclick="window.location.href='<?php echo base_url .'/admin?message&id='.$row['id']; ?>'; return false"><?php echo $row['email_client']; ?></td>
+					<td onclick="window.location.href='<?php echo base_url .'/admin?message&id='.$row['id']; ?>'; return false"><?php $coment_client = $row['coment_client'];
 					$counttext = 50;
 					$coment_client = substr($coment_client, 0, $counttext);
 					$coment_client = rtrim($coment_client);
@@ -51,7 +58,8 @@ $errorsl = $this->get('errorsl');
 						echo $row['coment_client'];
 					}   ?>
 				</td>
-				<td><?php echo $row['date']; ?></td>
+				<td onclick="window.location.href='<?php echo base_url .'/admin?message&id='.$row['id']; ?>'; return false"><?php echo $row['date']; ?></td>
+				<td><a href="<?php echo base_url .'admin?delete&id='.$row['id']; ?>">Видалити</a></td>
 			</tr>
 			<?php } ?>
 		</table>
@@ -59,17 +67,31 @@ $errorsl = $this->get('errorsl');
 		<?php }
 		else
 		{
-			if (isset($_GET['message'])) {
-				$roww = $this->get('roww');?>
-				<div class="content position-table message-block">
-					<div class="message-block-padd">
-						<h2><?php echo $roww['name_client']; ?></h2><br><hr>
-						<h4 class="left-position"><?php echo $roww['email_client']; ?></h4>
-						<span class="right-position"><?php echo $roww['date'].' о '.$roww['time']; ?></span><br><br>
-						<span><?php echo $roww['coment_client']; ?></span>
+			$roww = $this->get('roww');
+			if (isset($_GET['message'])) {?>
+			<div class="content position-table message-block">
+				<div class="message-block-padd">
+					<h2><?php echo $roww['name_client']; ?></h2><br><hr>
+					<h4 class="left-position"><?php echo $roww['email_client']; ?></h4>
+					<span class="right-position"><?php echo $roww['date'].' о '.$roww['time']; ?></span><br><br>
+					<span><?php echo $roww['coment_client']; ?></span>
+				</div>
+			</div>
+			<?php }
+
+			if (isset($_GET['delete'])) {
+				?>
+				<div class="medium-block-top zatmenie">
+					<div class="centr-block">
+						<form action="<?php echo base_url .'admin?delete&id='.$roww['id']; ?>" method="post">
+							Ви дійсно хочете <span style="color: red;">видалити</span> дане повідомлення!!!<br/><br/>
+							<button type="submit" class="confirmation-btn" name="delete_tovar" value="1">Так</button>
+							<button type="submit" class="confirmation-btn" name="delete_tovar" value="0">Ні</button>
+						</form>
 					</div>
 				</div>
-				<?php }
+
+				<?php } 
 			} 
 		}?>
 	</div>
