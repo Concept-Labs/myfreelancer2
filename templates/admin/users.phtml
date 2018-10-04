@@ -4,8 +4,15 @@ $num = $this->get('num');
 $row_users = $this->get('row_users');
 
 $roww = $this->get('roww');
+?>
 
-if (!isset($_GET['edit_site']) && !isset($_GET['delete_site']) && !isset($_GET['edit_delivery']) && !isset($_GET['delete_delivery']) && !isset($_GET['edit_admin']) && !isset($_GET['delete_admin']) && !isset($_GET['edit_directrix']) && !isset($_GET['delete_directrix'])) { ?>
+<div>
+    <a href="<?php echo base_url .'admin'; ?>">Повідомлення</a>
+    <a href="<?php echo base_url .'admin/users'; ?>">Користувачі</a>
+</div>
+
+<?php if (!isset($_GET['edit_site']) && !isset($_GET['delete_site'])) { ?>
+
 <div class="settings" style="margin-top: 80px;">   
     <div>
         <h2>Паролі до паролі до панелі управління</h2>
@@ -43,7 +50,7 @@ if (!isset($_GET['edit_site']) && !isset($_GET['delete_site']) && !isset($_GET['
                                 </div>
                                 <div>
                                     <h3>Змінити пароль</h3>
-                                    <form action="<?php echo base_url .'settings?edit_site&id='.$roww['id']; ?>" method="post">
+                                    <form action="<?php echo base_url .'admin/users?edit_site&id='.$roww['id']; ?>" method="post">
                                         <table class="add-table">
                                             <tr class="table-top">
                                                 <td>№</td>
@@ -66,8 +73,6 @@ if (!isset($_GET['edit_site']) && !isset($_GET['delete_site']) && !isset($_GET['
                                 }
 
                                 if (isset($_GET['delete_site'])) {
-                                    $delete = $this->get('delete');
-                                            if (!isset($delete)) {
                                                  ?>
                                             <div class="delete-block-top zatmenie">
                                                 <div class="delete-block">
@@ -79,9 +84,7 @@ if (!isset($_GET['edit_site']) && !isset($_GET['delete_site']) && !isset($_GET['
                                                 </div>
                                             </div>
 
-                                            <?php  } else {
-                                                echo "<div style='color: green;'>Користувача успішно видалено!</div>";
-                                            }
+                                            <?php
 
                                         }
 
