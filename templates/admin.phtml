@@ -25,20 +25,20 @@ $errorsl = $this->get('errorsl');
 		<?php }
 		else { ?>
 
-		<div>
-			<a href="<?php echo base_url .'admin'; ?>">Повідомлення</a>
-			<a href="<?php echo base_url .'admin/users'; ?>">Користувачі</a>
-		</div>
-		
-
-		<?php if (!isset($_GET['message']) && !isset($_GET['delete'])) {?>
 		<div class="content position-table">
+			<div class="user_panel">
+				<a title="Повідомлення" class="admin_message users" href="<?php echo base_url .'admin'; ?>"><i class="fas fa-envelope"></i></a>
+				<a title="Користувачі" class="admin_user users" href="<?php echo base_url .'admin/users'; ?>"><i class="fas fa-cog"></i></a>
+			</div>
+
+			<?php if (!isset($_GET['message']) && !isset($_GET['delete'])) {?>
+
 			<table>
 				<h2>Вхідні повідомлення</h2>
 				<tr class="table-top">
 					<td>Ім'я</td>
 					<td>Email</td>
-					<td>Повідомлення</td>
+					<td class="width_row">Повідомлення</td>
 					<td>Дата</td>
 					<td>Дія</td>
 				</tr>
@@ -59,7 +59,7 @@ $errorsl = $this->get('errorsl');
 					}   ?>
 				</td>
 				<td onclick="window.location.href='<?php echo base_url .'/admin?message&id='.$row['id']; ?>'; return false"><?php echo $row['date']; ?></td>
-				<td><a href="<?php echo base_url .'admin?delete&id='.$row['id']; ?>">Видалити</a></td>
+				<td class="center_text"><a href="<?php echo base_url .'admin?delete&id='.$row['id']; ?>"><i class="fas fa-trash-alt"></i></a></td>
 			</tr>
 			<?php } ?>
 		</table>
@@ -81,7 +81,7 @@ $errorsl = $this->get('errorsl');
 
 			if (isset($_GET['delete'])) {
 				?>
-				<div class="medium-block-top zatmenie">
+				<div class="delete_message zatmenie">
 					<div class="centr-block">
 						<form action="<?php echo base_url .'admin?delete&id='.$roww['id']; ?>" method="post">
 							Ви дійсно хочете <span style="color: red;">видалити</span> дане повідомлення!!!<br/><br/>

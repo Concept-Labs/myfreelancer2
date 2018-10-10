@@ -104,37 +104,6 @@ a.inform_btn:hover{
 	color: #fff;
 }
 
-
-/*адмін панель*/
-.position-table{
-	margin-top: 100px;
-	width: 74%;
-	margin: 100px auto;
-}
-.admin-page table{
-	width: 100%;
-	border: 1px solid silver;
-	border-collapse: collapse;
-}
-.admin-page table tr{
-	cursor: pointer;
-}
-.admin-page table td{
-	border: 1px solid silver;
-	padding: 5px 10px;
-}
-tr:hover, .table-top:not(:hover){
-	background-color: #e2e2e2;
-}
-.message-block{
-	border: 1px solid silver;
-}
-.message-block-padd{
-	padding: 2%;
-}
-.left-position{
-	float: left;
-}
-.right-position{
-	float: right;
+.width_row{
+	width: 55%;
 }

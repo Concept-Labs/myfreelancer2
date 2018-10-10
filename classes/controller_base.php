@@ -24,6 +24,7 @@ Abstract Class Controller_Base
 		$this->_baseTemplate->addCss('styles/style.css');
         $this->_baseTemplate->addCss('styles/galery.css');	
 		$this->_baseTemplate->addCss('styles/authorization.css');
+        $this->_baseTemplate->addCss('styles/admin.css');
         $parentTemplate = $this->_baseTemplate;
         $parentTemplate->set('title', $title);
         return clone $this->_registry->get('template');

@@ -1,0 +1,119 @@
+/*адмін панель*/
+.position-table{
+	margin-top: 100px;
+	width: 74%;
+	margin: 100px auto;
+}
+.admin-page table{
+	width: 100%;
+	border: 1px solid silver;
+	border-collapse: collapse;
+}
+.admin-page table tr{
+	cursor: pointer;
+}
+.admin-page table td{
+	border: 1px solid silver;
+	padding: 5px 10px;
+}
+tr:hover, .table-top:not(:hover){
+	background-color: #e2e2e2;
+}
+.message-block{
+	border: 1px solid silver;
+}
+.message-block-padd{
+	padding: 2%;
+}
+.left-position{
+	float: left;
+}
+.right-position{
+	float: right;
+}
+
+.user_panel {
+	    font-size: 130%;
+    position: relative;
+    float: right;
+}
+
+.user_panel a{
+	color: #000;
+}
+.user_panel i{
+	-webkit-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+.admin_message{
+	margin-right: 10px;
+}
+.user_panel i:hover{
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
+.admin_user i:hover{
+	-webkit-transform: scale(1.2) rotate(180deg);
+	-ms-transform: scale(1.2) rotate(180deg);
+	-o-transform: scale(1.2) rotate(180deg);
+	transform: scale(1.2) rotate(180deg);
+}
+
+.fa-trash-alt{
+	color: red;
+}
+td.center_text{
+	width: 30px;
+	text-align: center;
+}
+
+.add_user{
+	float: right;
+	margin-top: 20px;
+	 background-color: #26b22a;
+    border: 1px solid #338f15;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+}
+.add_user i{
+   color: #fff;
+}
+.add_user:hover{
+	background: #338f15;
+}
+.add_password{
+	margin-bottom: 10px;
+	float: right;
+}
+
+.delete_message{
+	text-align: center;
+	font-size: 115%;
+	margin: 120px auto;
+	padding: 5%;
+	width: 50%;
+	background: #fff;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 19px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    0px 0px 19px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         0px 0px 19px 0px rgba(50, 50, 50, 0.75);
+}
+.delete_message button{
+	border: 0;
+	border-radius: 5px;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+.delete-block .delete_yes{
+	background-color: red;
+}
+.delete-block .delete_yes{
+	background-color: #26b22a;
+}

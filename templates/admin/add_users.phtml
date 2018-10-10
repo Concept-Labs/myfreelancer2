@@ -1,7 +1,7 @@
 <?php 
 $errore = $this->get('errore');
 ?>
-<div style="margin-top: 80px;">
+<div class="content position-table admin-page">
 	<div style="float: left;margin-top: 30px;">
 		<?php 
 		if (!empty($errore)) echo "<div style='color: red;'>" .$errore ."</div>"; 
@@ -25,7 +25,7 @@ $errore = $this->get('errore');
 						<td> <input type="text" name="password" value="<?php echo @$_POST['password']; ?>"> </td>
 						<td> <input type="text" name="password-confirm" value="<?php echo @$_POST['password-confirm']; ?>"> </td>			
 					</tr>
-					<input class="sub-save" type="submit" name="add" value=" Добавити">
+					<input class="sub-save add_password" type="submit" name="add" value=" Додати">
 				</table>
 				<input type="hidden" name="date" value="<?php echo date('Y-m-d') ?>" />
 				<br/><br/><br/><br/><br/>
