@@ -117,3 +117,9 @@ box-shadow:         0px 0px 19px 0px rgba(50, 50, 50, 0.75);
 .delete-block .delete_yes{
 	background-color: #26b22a;
 }
+.unread{
+	 background-color: #f4f3f3;
+}
+.read{
+	background-color: #fff;
+}
