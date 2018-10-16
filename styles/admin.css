@@ -47,6 +47,9 @@ tr:hover, .table-top:not(:hover){
 	transition: all .5s;
 }
 .admin_message{
+	margin-right: 5px;
+}
+.admin_user{
 	margin-right: 10px;
 }
 .user_panel i:hover{

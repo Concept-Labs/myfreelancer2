@@ -99,11 +99,55 @@ a.inform_btn{
 	-o-transition: all .4s;
 	transition: all .4s;
 }
-a.inform_btn:hover{
+a.arrow_box:hover{
 	background: #02d871;
 	color: #fff;
 }
-
+.arrow_box:hover .arrow_box:after {
+	border-top-color: #02d871;
+}
 .width_row{
 	width: 55%;
+}
+.angle_down{
+	font-size: 170%;
+	padding: 5px 10px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+}
+
+
+.arrow_box {
+	text-decoration: none;
+	color: #02d871;
+	border: 2px solid #02d871;
+	padding: 15px 50px;
+	font-size: 110%;
+	-webkit-transition: all .4s;
+	-o-transition: all .4s;
+	transition: all .4s;
+	position: relative;
+}
+.arrow_box:after, .arrow_box:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+
+
+	border-width: 10px;
+	margin-left: -10px;
+}
+.arrow_box:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-top-color: #02d871;
+	border-width: 16px;
+	margin-left: -16px;
 }

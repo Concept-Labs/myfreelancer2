@@ -68,12 +68,24 @@
 
 /* Вибір мови в хедері */
 .langbar{
-
-	cursor: pointer;
-	margin: 30px 0 0 30px;
-	float: left;
-	color: #fff;
-	font: normal 90% 'century gothic', arial;
+    cursor: pointer;
+    margin: 24px 0 0 30px;
+    float: left;
+    color: #fff;
+    font: normal 90% 'century gothic', arial;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.fa-chevron-down{
+	margin-left: 15px;
+}
+.langbar:hover{
+	border: 1px solid #e8e6e6;
+	color: #e8e6e6;
 }
 .langbar li button{
 	color: #fff;
