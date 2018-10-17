@@ -305,8 +305,7 @@ figure.effect-duke:hover p {
 /*ГАЛЕРЕЯ ФОТОГРАФІЙ*/
 .container {
   width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
+  margin: 100px auto;
     font-family: 'Open Sans', sans-serif;
 }
 .photo {
@@ -319,7 +318,7 @@ figure.effect-duke:hover p {
     display: block;
     max-width: 100%;
     height: auto;
-    border: 10px solid #eee;
+    border: 10px solid #02d871;
     box-sizing: border-box;
 }
 .photo a:hover {
@@ -331,7 +330,7 @@ figure.effect-duke:hover p {
 }
 .photo a:after {
     content: '';
-    background: url(../img/eye-icon.png) no-repeat center;
+    background: url(../img/hurtovabaza/eye-icon.png) no-repeat center;
     width: 52px;
     height: 35px;
     position: absolute;
@@ -351,9 +350,9 @@ figure.effect-duke:hover p {
     margin-top: 20px;
 }
 .container h1 {
+  font-weight: normal;
     font-size: 36px;
-    text-transform: uppercase;
-    color: #cccccc;
+    color: #02d871;
     text-align: center;
     margin: 30px 0;
 }
