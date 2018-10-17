@@ -71,10 +71,10 @@
     cursor: pointer;
     margin: 24px 0 0 30px;
     float: left;
-    color: #fff;
+    color: #e8e6e6;
     font: normal 90% 'century gothic', arial;
     padding: 5px 10px;
-    border: 1px solid white;
+    border: 1px solid #e8e6e6;
     border-radius: 5px;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
@@ -84,8 +84,8 @@
 	margin-left: 15px;
 }
 .langbar:hover{
-	border: 1px solid #e8e6e6;
-	color: #e8e6e6;
+	border: 1px solid #fff;
+	color: #fff;
 }
 .langbar li button{
 	color: #fff;
