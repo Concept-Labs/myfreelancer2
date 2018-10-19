@@ -1,5 +1,24 @@
 @media screen and (max-width: 1024px) and (min-width: 470px){
-
+	.bg_top:before {
+		content: '';
+		background-image: url(../img/apple-computer-desk-159643.jpg);
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: -1;
+	}
+	.why_us:before {
+		content: '';
+		background-image: url(../img/myfreelancer2.jpg);
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: -1;
+	}
 	.header {
 		width: 100%;
 		font-size: 250%;
@@ -306,5 +325,27 @@
 	.fot-left {
 		margin: 35px 0 0 0;
 		width: 100%;
+	}
+
+
+	.photo {
+		float: left;
+		width: 100%;
+		padding: 10px;
+		box-sizing: border-box;
+		margin-top: 30px;
+	}
+	.photo img{
+		height: auto;
+	}
+	.container_galery{
+		margin-top: 15%;
+		font-size: 210%;
+	}
+	.container_galery h1{
+		font-size: 240%;
+	}
+	.photo figcaption{
+		font-size: 160%;
 	}
 }

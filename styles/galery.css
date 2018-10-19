@@ -3,14 +3,12 @@
   margin-top: 8px;
 }
 .grid {
-  width: 300px;
-  height: 300px;
   float: left;
   position: relative;
-  padding-right: 33px;
   max-width: 1000px;
   list-style: none;
   text-align: center;
+  width: 33.333333%;
 }
 
 /* Common style */
@@ -303,10 +301,12 @@ figure.effect-duke:hover p {
 /* кінець блока послідовності */
 
 /*ГАЛЕРЕЯ ФОТОГРАФІЙ*/
-.container {
+.container_galery {
   width: 100%;
+  max-width: 990px;
+  color: #6E6E6E;
   margin: 100px auto;
-    font: normal 110% 'century gothic', arial;
+  font: normal 110% 'century gothic', arial;
 }
 p.galery_p {
   text-align: center;
@@ -315,60 +315,61 @@ p.galery_p {
 }
 .photo {
   float: left;
-    width: 33.333333%;
+  width: 33.333333%;
   padding: 10px;
+
   box-sizing: border-box;
 }
 .photo img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    border: 10px solid #02d871;
-    box-sizing: border-box;
+  display: block;
+  max-width: 100%;
+  height: 159px;
+  border: 10px solid #02d871;
+  box-sizing: border-box;
 }
 .photo a:hover {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 .photo a {
-    display: block;
-    position: relative;
+  display: block;
+  position: relative;
 }
 .photo a:after {
-    content: '';
-    background: url(../img/hurtovabaza/eye-icon.png) no-repeat center;
-    width: 52px;
-    height: 35px;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    bottom: 0px;
-    right: 0;
-    visibility: hidden;
+  content: '';
+  background: url(../img/hurtovabaza/eye-icon.png) no-repeat center;
+  width: 52px;
+  height: 35px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0px;
+  right: 0;
+  visibility: hidden;
 }
 .photo:hover> a:after {
-    visibility: visible;
+  visibility: visible;
 }
 .photo figcaption {
-    color: #999999;
-    text-align: center;
-    margin-top: 20px;
+  color: #999999;
+  text-align: center;
+  margin-top: 20px;
 }
-.container h1 {
+.container_galery h1 {
   font-weight: normal;
-    font-size: 36px;
-    color: #02d871;
-    text-align: center;
-    margin: 30px 0 10px 0;
-    text-transform: uppercase;
+  font-size: 36px;
+  color: #02d871;
+  text-align: center;
+  margin: 30px 0 10px 0;
+  text-transform: uppercase;
 }
 #gallery {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 #gallery:after { 
-   content: '';
-   display: block; 
-   height: 0; 
-   clear: both;
+ content: '';
+ display: block; 
+ height: 0; 
+ clear: both;
 }
 /*КІНЕЦЬ ГАЛЕРЕЇ*/

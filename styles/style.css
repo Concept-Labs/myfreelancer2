@@ -151,3 +151,24 @@ a.arrow_box:hover{
 	border-width: 16px;
 	margin-left: -16px;
 }
+
+a.center_button{
+	text-transform: uppercase;
+	font-weight: bold;
+	top: 60px;
+	left: 30px;
+	text-decoration: none;
+	color: #fff;
+	background: #02d871;
+	border: 2px solid #02d871;
+	padding: 15px 50px;
+	font-size: 110%;
+	-webkit-transition: all .4s;
+	-o-transition: all .4s;
+	transition: all .4s;
+	position: relative;
+}
+a.center_button:hover{
+	background: none;
+	color: #02d871;
+}

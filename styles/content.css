@@ -79,7 +79,7 @@ input[type="submit"].sub{
 	background-color: #F2F2F2;
 	float: left;
 	width: 1140px;
-	padding-bottom: 40px;
+	padding-bottom: 50px;
 }
 
 .pricings h1, .portfolio h1{
@@ -143,7 +143,7 @@ input[type="submit"].sub{
 }
 
 .pric_title{
-	margin-top: 70px;
+	margin-top: 85px;
 	text-align: center;
 }
 
@@ -161,7 +161,10 @@ input[type="submit"].sub{
 .price{
 	margin: 0 auto;
 	width: 1140px;
+	height: auto;
 	color: #A4A4A4;
+	padding-bottom: 80px;
+	overflow: hidden;
 }
 .price_con{
 	width: 1000px;
