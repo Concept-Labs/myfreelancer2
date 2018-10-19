@@ -2,7 +2,26 @@
 $errore = $this->get('errore');
 ?>
 <div class="content position-table admin-page">
+	<?php if (!isset($_SESSION['login_admin'])) {            
+		?>
+		<div class="authorization-block">
+			<?php if (!empty($errorsl)) { ?>
+			<div>
+				<span style="color:red	;"><?php echo $errorsl; ?></span>
+			</div> 
+			<?php } ?>
+			<br/>
+			<img src="../img/preload.png" alt="MyFreelancer">
+			<form action="<?php echo base_url .'admin'; ?>" method="post">
+				<input class="admin-int" type="text" name="login" placeholder=" ваш логін" value="<?php echo @$_POST['login']; ?>" /><br/><br/>
+				<input class="admin-int" type="password" name="password" placeholder=" ваш пароль"/><br/><br/>
+				<input type="submit" name="log" value="Увійти" />
+			</form>
+		</div>
+		<?php }
+		else { ?>
 	<div style="float: left;margin-top: 30px;">
+		
 		<?php 
 		if (!empty($errore)) echo "<div style='color: red;'>" .$errore ."</div>"; 
 			if (empty($errore)) {
@@ -32,5 +51,7 @@ $errore = $this->get('errore');
 				
 				
 			</form>
+			
 		</div>
+		<?php } ?>
 	</div>

@@ -6,93 +6,113 @@ $row_users = $this->get('row_users');
 $roww = $this->get('roww');
 ?>
 <div class="content position-table admin-page">
-    <div class="settings" style="margin-top: 80px;">   
+    <div class="settings" style="margin-top: 80px;"> 
 
-        <div class="user_panel">
-            <a  title="Повідомлення" class="admin_message users" href="<?php echo base_url .'admin'; ?>"><i class="fas fa-envelope"></i></a>
-            <a title="Користувачі" class="admin_user users" href="<?php echo base_url .'admin/users'; ?>"><i class="fas fa-cog"></i></a>
-            |
-            <a href="admin/logout" title="Вийти">  <i class="fas fa-sign-out-alt"></i></a>
-        </div>
-
-        <?php if (!isset($_GET['edit_site']) && !isset($_GET['delete_site'])) { ?>
-        <div>
-            <h2>Паролі до АдмінПанелі</h2>
-
-            <table>
-                <tr class="table-top">
-                    <td>№</td>
-                    <td class="width-name">Логін</td>
-                    <td>Дата</td>
-                    <td>Дія</td>
-                </tr>
-                <?php if ($num) {
-                    while ($row_users = mysqli_fetch_array($query, MYSQLI_BOTH)) {
-                        $date_format = date_format(date_create($row_users['date']), 'd.m.Y'); ?>
-                        <tr>                
-                            <td><?php echo $row_users['id']; ?></td>
-                            <td class="width-name"><a href="<?php echo base_url .'admin/users?edit_site&id='.$row_users['id']; ?>"><?php echo $row_users['login'];?></a></td>
-                            <td><?php echo $date_format; ?></td>
-                            <td> <a href="<?php echo base_url .'admin/users?edit_site&id='.$row_users['id']; ?>" class="edit" title="Змінити пароль"> <i class="fas fa-pen"></i></a> <a href="<?php echo base_url .'admin/users?delete_site&id='.$row_users['id']; ?>" class="delete" title="Видалити пароль"><i class="fas fa-trash-alt"></i></a></td>
-                            <?php } } ?>
-                        </tr>
-                    </table>
-                    <span class="add_user">
-                       <a href="<?php echo base_url .'admin/add_users'; ?>" class="add-tovar" title="Додати користувача"><i class="fas fa-plus"></i></a>
-                   </span>
-                   
-               </div>
-
-               <?php
-           } else { 
-
-            if (isset($_GET['edit_site'])) {
-                $errore = $this->get('errore');
-                ?>
+        <?php if (!isset($_SESSION['login_admin'])) {            
+            ?>
+            <div class="authorization-block">
+                <?php if (!empty($errorsl)) { ?>
                 <div>
-                    <?php 
-                    if (!empty($errore)) echo "<div style='color: red;  float: right;'>" .$errore ."</div>"; ?>
-                </div>
-                <div>
-                    <h3>Змінити пароль</h3>
-                    <form action="<?php echo base_url .'admin/users?edit_site&id='.$roww['id']; ?>" method="post">
-                        <table class="add-table">
-                            <tr class="table-top">
-                                <td>№</td>
-                                <td class="width-name">Логін</td>
-                                <td>Новий пароль</td>
-                                <td>Пітвердження пароля</td>
+                    <span style="color:red  ;"><?php echo $errorsl; ?></span>
+                </div> 
+                <?php } ?>
+                <br/>
+                <img src="../img/preload.png" alt="MyFreelancer">
+                <form action="<?php echo base_url .'admin'; ?>" method="post">
+                    <input class="admin-int" type="text" name="login" placeholder=" ваш логін" value="<?php echo @$_POST['login']; ?>" /><br/><br/>
+                    <input class="admin-int" type="password" name="password" placeholder=" ваш пароль"/><br/><br/>
+                    <input type="submit" name="log" value="Увійти" />
+                </form>
+            </div>
+            <?php }
+            else { ?>  
+
+            <div class="user_panel">
+                <a  title="Повідомлення" class="admin_message users" href="<?php echo base_url .'admin'; ?>"><i class="fas fa-envelope"></i></a>
+                <a title="Користувачі" class="admin_user users" href="<?php echo base_url .'admin/users'; ?>"><i class="fas fa-cog"></i></a>
+                |
+                <a href="logout" title="Вийти">  <i class="fas fa-sign-out-alt"></i></a>
+            </div>
+
+            <?php if (!isset($_GET['edit_site']) && !isset($_GET['delete_site'])) { ?>
+            <div>
+                <h2>Паролі до АдмінПанелі</h2>
+
+                <table>
+                    <tr class="table-top">
+                        <td>№</td>
+                        <td class="width-name">Логін</td>
+                        <td>Дата</td>
+                        <td>Дія</td>
+                    </tr>
+                    <?php if ($num) {
+                        while ($row_users = mysqli_fetch_array($query, MYSQLI_BOTH)) {
+                            $date_format = date_format(date_create($row_users['date']), 'd.m.Y'); ?>
+                            <tr>                
+                                <td><?php echo $row_users['id']; ?></td>
+                                <td class="width-name"><a href="<?php echo base_url .'admin/users?edit_site&id='.$row_users['id']; ?>"><?php echo $row_users['login'];?></a></td>
+                                <td><?php echo $date_format; ?></td>
+                                <td> <a href="<?php echo base_url .'admin/users?edit_site&id='.$row_users['id']; ?>" class="edit" title="Змінити пароль"> <i class="fas fa-pen"></i></a> <a href="<?php echo base_url .'admin/users?delete_site&id='.$row_users['id']; ?>" class="delete" title="Видалити пароль"><i class="fas fa-trash-alt"></i></a></td>
+                                <?php } } ?>
                             </tr>
-                            <tr>
-                                <td> <?php echo $roww['id']; ?></td>
-                                <td><?php echo $roww['login']; ?></td>
-                                <td> <input type="password" name="password"> </td>
-                                <td> <input type="password" name="password-confirm"> </td>             
-                            </tr>
-                            <input class="sub-save" type="submit" name="save" value=" Зберегти">
                         </table>
-                        <br/><br/><br/><br/><br/>
+                        <span class="add_user">
+                         <a href="<?php echo base_url .'admin/add_users'; ?>" class="add-tovar" title="Додати користувача"><i class="fas fa-plus"></i></a>
+                     </span>
 
-                    </form>
+                 </div>
+
+                 <?php
+             } else { 
+
+                if (isset($_GET['edit_site'])) {
+                    $errore = $this->get('errore');
+                    ?>
+                    <div>
+                        <?php 
+                        if (!empty($errore)) echo "<div style='color: red;  float: right;'>" .$errore ."</div>"; ?>
+                    </div>
+                    <div>
+                        <h3>Змінити пароль</h3>
+                        <form action="<?php echo base_url .'admin/users?edit_site&id='.$roww['id']; ?>" method="post">
+                            <table class="add-table">
+                                <tr class="table-top">
+                                    <td>№</td>
+                                    <td class="width-name">Логін</td>
+                                    <td>Новий пароль</td>
+                                    <td>Пітвердження пароля</td>
+                                </tr>
+                                <tr>
+                                    <td> <?php echo $roww['id']; ?></td>
+                                    <td><?php echo $roww['login']; ?></td>
+                                    <td> <input type="password" name="password"> </td>
+                                    <td> <input type="password" name="password-confirm"> </td>             
+                                </tr>
+                                <input class="sub-save" type="submit" name="save" value=" Зберегти">
+                            </table>
+                            <br/><br/><br/><br/><br/>
+
+                        </form>
+                        <?php
+                    }
+
+                    if (isset($_GET['delete_site'])) {
+                     ?>
+                     <div class="delete-block-top zatmenie">
+                        <div class="delete-block">
+                            <form action="<?php echo base_url .'admin/users?delete_site&id='.$roww['id']; ?>" method="post">
+                                Ви дійсно хочете <span style="color: red;">видалити</span> даного користувача!!!<br/><br/>
+                                <button type="submit" class="delete_yes" name="delete_user" value="1">Так</button>
+                                <button type="submit" class="delete_no" name="delete_user" value="0">Ні</button>
+                            </form>
+                        </div>
+                    </div>
+
                     <?php
+
                 }
 
-                if (isset($_GET['delete_site'])) {
-                   ?>
-                   <div class="delete-block-top zatmenie">
-                    <div class="delete-block">
-                        <form action="<?php echo base_url .'admin/users?delete_site&id='.$roww['id']; ?>" method="post">
-                            Ви дійсно хочете <span style="color: red;">видалити</span> даного користувача!!!<br/><br/>
-                            <button type="submit" class="delete_yes" name="delete_user" value="1">Так</button>
-                            <button type="submit" class="delete_no" name="delete_user" value="0">Ні</button>
-                        </form>
-                    </div>
-                </div>
-
-                <?php
-
             }
-
         }
         ?>
     </div> 
