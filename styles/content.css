@@ -79,9 +79,13 @@ input[type="submit"].sub{
 	background-color: #F2F2F2;
 	float: left;
 	width: 1140px;
-	padding-bottom: 50px;
+	padding-bottom: 25px;
 }
-
+.sample_sites{
+	width: 105%; 
+	height: 390px; 
+	overflow-y:scroll;
+}
 .pricings h1, .portfolio h1{
 	font-weight: inherit;
 	font-size: 260%;
@@ -143,7 +147,7 @@ input[type="submit"].sub{
 }
 
 .pric_title{
-	margin-top: 85px;
+	margin-top: 70px;
 	text-align: center;
 }
 

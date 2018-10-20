@@ -19,6 +19,17 @@
 		bottom: 0;
 		z-index: -1;
 	}
+	.arrow_box{
+		text-decoration: none;
+		color: #02d871;
+		border: 5px solid #02d871;
+		padding: 30px 80px;
+		font-size: 120%;
+		-webkit-transition: all .4s;
+		-o-transition: all .4s;
+		transition: all .4s;
+		position: relative;
+	}
 	.header {
 		width: 100%;
 		font-size: 250%;
@@ -101,7 +112,9 @@
 		padding-bottom: 40px;
 		font-size: 220%;
 	}
-
+	.sample_sites{
+		height: auto; 
+	}
 	.pricings p, .portfolio p {
 		font-size: 100%;
 		padding: 0 80px;
@@ -115,6 +128,7 @@
 		max-width: 990px;
 		margin: 30px auto;
 		color: #6E6E6E;
+		padding-bottom: 80px;
 	}
 	.cont_img {
 		height: auto;
@@ -144,6 +158,9 @@
 	.price_con {
 		width: 90%;
 		margin: 0 auto;
+	}
+	.pric_title {
+		margin-top: 140px;
 	}
 	.grid {
 		width: 85%;
@@ -315,12 +332,25 @@
 	.contact-left ul {
 		width: 200px;
 	}
+	ul.subsave {
+		z-index: 9999;
+		border-left: 2px solid;
+		border-right: 2px solid;
+		border-bottom: 2px solid;
+		padding: 10px;
+		margin-left: 60px;
+		width: 120px;
+		height: 80px;
+	}
+	li.hover-save {
+		position: absolute;
+	}
 	.footer {
 		float: left;
 		width: 100%;
 		height: auto;
 		text-align: center;
-		font-size: 90%;
+		font-size: 110%;
 	}
 	.fot-left {
 		margin: 35px 0 0 0;
@@ -347,5 +377,28 @@
 	}
 	.photo figcaption{
 		font-size: 160%;
+	}
+
+	/*КНОПКА ХОЧУ САЙТ*/
+	a.center_button {
+		width: 95%;
+		height: 100px;
+		text-align: center;
+		line-height: 2.5;
+		text-transform: uppercase;
+		font-weight: bold;
+		left: 0;
+		right: 0;
+		margin: auto;
+		text-decoration: none;
+		color: #fff;
+		background: #02d871;
+		border: 2px solid #02d871;
+		font-size: 110%;
+		-webkit-transition: all .4s;
+		-o-transition: all .4s;
+		transition: all .4s;
+		position: absolute;
+		font-size: 140%;
 	}
 }

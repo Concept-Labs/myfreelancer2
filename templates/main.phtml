@@ -55,25 +55,64 @@ if (isset($_SESSION['lang'])) {
 			<div class="container">
 				<div class="cont_img">
 					<img src="img/Без назви-2.png" alt="Ескиз на ПК">
-				</div>					
-				<div class="cont_content">
-					<ul>
-						<li><?php echo $site3;?>
-							<p><?php echo $description_site3;?> </p>
-						</li>
-						<li><?php echo $site2;?>
-							<p><?php echo $description_site2;?></p>
-						</li>
-						<li><?php echo $site1;?>
-							<p><?php echo $description_site1;?></p>
-						</li>
-					</ul>
-					<a href="#contact" class="center_button"><?php echo $want_site; ?></a>
-				</div>
-			
+				</div>			
+				<div style="cursor: pointer; overflow:hidden;">
 
+					<div class="sample_sites">
+
+						<div class="cont_content">
+							<ul>
+								<li><?php echo $site3;?>
+									<p><?php echo $description_site3;?> </p>
+								</li>
+								<li><?php echo $site2;?>
+									<p><?php echo $description_site2;?></p>
+								</li>
+								<li><?php echo $site1;?>
+									<p><?php echo $description_site1;?></p>
+								</li>
+								<li><?php echo $site4;?>
+									<p><?php echo $description_site4;?></p>
+								</li>
+							</ul>
+							
+						</div>
+
+					</div>
+
+				</div>		
+				<a href="#x" class="overlay" id="want_site"></a>
+				<div class="popup">
+					<p>Заполните форму, чтобы получить профессиональную консультацию наших специалистов!</p>
+					<br><br>
+					<input type="text" placeholder="Домен(ссылка) сайта который Вы хотите">
+					<br><br><br>
+					<p>Какой сайт вам нужен?</p>
+					<br>
+					<select name="" id="">
+						<option value="">Лендинг</option>
+						<option value="">Сайт-визитка</option>
+						<option value="">Интернет-магазин</option>
+						<option value="">Информационный портал</option>
+					</select>
+					<br><br><br>
+					<p>Ваши данные:</p>
+					<br>
+					<input type="text" placeholder="Ваше имя" required>
+					<br><br>
+					<input type="email" placeholder="Ваш email" required>
+					<br><br>
+					<input type="tel"  pattern="2[0-9]{3}-[0-9]{3}" placeholder="Ваш телефон" required>
+					<br><br><br>
+					<textarea name="" id="" cols="10" rows="1" placeholder="Коментарий по желанию"></textarea>
+					<a class="close" href="#close"></a>
+					<br><br>
+					<input type="submit" value="Отправить">
+				</div>
 			</div>	
+				<a href="#want_site" class="center_button"><?php echo $want_site; ?></a>
 		</div>
+
 		<div class="pricings" id="works">
 			<div class="pric_title">
 				<h1><?php echo $our_works;?></h1>
