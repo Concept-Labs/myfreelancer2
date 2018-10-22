@@ -264,8 +264,8 @@ if (isset($_SESSION['lang'])) {
 						<?php } } ?>
 					</div>
 					<form action="/index" method="post">
-						<input type="text" name="name" text="" placeholder=" <?php echo $conctakt_name;?>">
-						<input type="text" name="email" placeholder=" <?php echo $conctakt_email;?>" class="eml"> <br/><br/>
+						<input type="text" name="name" text="" placeholder=" <?php echo $conctakt_name;?>" required>
+						<input type="email" name="email" placeholder=" <?php echo $conctakt_email;?>" class="eml" required> <br/><br/>
 						<textarea name="coment" id="" cols="30" rows="13" placeholder=" <?php echo $conctakt_comment;?>"></textarea>
 						<input type="hidden" name="date" value="<?php echo date('Y-m-d') ?>" />
 						<input type="hidden" name="time" value="<?php echo date('H:i:s') ?>" />

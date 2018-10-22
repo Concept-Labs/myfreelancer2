@@ -262,6 +262,20 @@ p.title_p3{
 	background: #1C1C1C;
 	border-radius: 0 0 5px 5px;
 }
+
+.contact_form input:required, .contact_form textarea:required {
+	background: #000;
+}
+.contact_form input:required:valid, .contact_form textarea:required:valid {
+	background: #000 url(../img/valid.png) no-repeat 98% center;
+
+	border-color: #02d871;
+}
+.contact_form input:focus:invalid, .contact_form textarea:focus:invalid {
+	background: #000 url(../img/invalid.png) no-repeat 98% center;
+
+	border-color: #b03535
+}
 .con_block{
 	width: 1000px;
 	margin: 0 auto;

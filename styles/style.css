@@ -372,16 +372,16 @@ a.center_button:hover{
 	background-color: #008042;
 }
 
-.popup input:required, .popup textarea:required {
-	background: #fff url(../img/red_asterisk.png) no-repeat 98% center;
+ input:required, .popup textarea:required {
+	background: url(../img/red_asterisk.png) no-repeat 98% center;
 }
-.popup input:required:valid, .popup textarea:required:valid {
-	background: #fff url(../img/valid.png) no-repeat 98% center;
+ input:required:valid, .popup textarea:required:valid {
+	background: url(../img/valid.png) no-repeat 98% center;
 
 	border-color: #02d871;
 }
-.popup input:focus:invalid, .popup textarea:focus:invalid {
-	background: #fff url(../img/invalid.png) no-repeat 98% center;
+ input:focus:invalid, .popup textarea:focus:invalid {
+	background: url(../img/invalid.png) no-repeat 98% center;
 
 	border-color: #b03535
 }
