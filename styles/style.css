@@ -14,6 +14,10 @@ div{
 a{
 	text-decoration: none;
 }
+ p::selection{
+ 	color: #fff;
+ 	background-color: #02d871;
+ }
 .bg_top{
 	background-image: url(../img/apple-computer-desk-159643.jpg);
 	background-attachment: fixed;
@@ -196,6 +200,12 @@ a.center_button:hover{
 	display: block;
 }
 /* стили модального окна */
+.popup > div{
+	overflow-y:scroll;
+	padding: 10px;
+	width: 99%;
+		height: 520px;
+}
 .popup {
 	top: -100%;
 	right: 0;
@@ -204,6 +214,7 @@ a.center_button:hover{
 	z-index: 20;
 	margin: 0;
 	width: 85%;
+
 	min-width: 320px;
 	max-width: 600px;
 	/* фиксированное позиционирование, окно стабильно при прокрутке */
@@ -349,14 +360,6 @@ a.center_button:hover{
 
 .popup input[type="text"]:focus, .popup input[type="tel"]:focus, .popup input[type="email"]:focus, .popup select:focus, .popup textarea:focus {
 	border-bottom: 2px solid #02d871;
-	display: block;
-	content: "";
-	width: 100%;
-	left:0%;
-	position:absolute;
-	-webkit-transform:translateX(0%);
-	-moz-transform:translateX(0%);
-	transform:translateX(0%);
 }
 
 .popup input[type="submit"]{
@@ -367,4 +370,38 @@ a.center_button:hover{
 }
 .popup input[type="submit"]:active{
 	background-color: #008042;
+}
+
+::-webkit-scrollbar-button { 
+	background-image:url(''); 
+	background-repeat:no-repeat; 
+	width:6px; 
+	height:0px 
+} 
+
+::-webkit-scrollbar-track { 
+	background-color: #e5e5e5; 
+	box-shadow:0px 0px 3px #e5e5e5 inset; 
+} 
+
+::-webkit-scrollbar-thumb { 
+	cursor: pointer;
+	-webkit-border-radius: 5px; 
+	border-radius: 5px; 
+	background-color:#02d871; 
+	box-shadow:0px 1px 1px #fff inset; 
+	background-image:url('https://yraaa.ru/_pu/24/59610063.png'); 
+	background-position:center; 
+	background-repeat:no-repeat; 
+} 
+
+::-webkit-resizer{ 
+	background-image:url(''); 
+	background-repeat:no-repeat; 
+	width:7px; 
+	height:0px 
+} 
+
+::-webkit-scrollbar{ 
+	width: 11px; 
 }

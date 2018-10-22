@@ -56,7 +56,7 @@ if (isset($_SESSION['lang'])) {
 				<div class="cont_img">
 					<img src="img/Без назви-2.png" alt="Ескиз на ПК">
 				</div>			
-				<div style="cursor: pointer; overflow:hidden;">
+				<div style="width: 670px; cursor: pointer; overflow:hidden;">
 
 					<div class="sample_sites">
 
@@ -83,7 +83,8 @@ if (isset($_SESSION['lang'])) {
 				</div>		
 				<a href="#x" class="overlay" id="want_site"></a>
 				<div class="popup">
-					<p>Заполните форму, чтобы получить профессиональную консультацию наших специалистов!</p>
+					<div>
+						<p>Заполните форму, чтобы получить профессиональную консультацию наших специалистов!</p>
 					<br><br>
 					<input type="text" placeholder="Домен(ссылка) сайта который Вы хотите">
 					<br><br><br>
@@ -108,6 +109,7 @@ if (isset($_SESSION['lang'])) {
 					<a class="close" href="#close"></a>
 					<br><br>
 					<input type="submit" value="Отправить">
+					</div>
 				</div>
 			</div>	
 				<a href="#want_site" class="center_button"><?php echo $want_site; ?></a>
