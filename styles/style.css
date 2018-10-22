@@ -372,6 +372,20 @@ a.center_button:hover{
 	background-color: #008042;
 }
 
+.popup input:required, .popup textarea:required {
+	background: #fff url(../img/red_asterisk.png) no-repeat 98% center;
+}
+.popup input:required:valid, .popup textarea:required:valid {
+	background: #fff url(../img/valid.png) no-repeat 98% center;
+
+	border-color: #02d871;
+}
+.popup input:focus:invalid, .popup textarea:focus:invalid {
+	background: #fff url(../img/invalid.png) no-repeat 98% center;
+
+	border-color: #b03535
+}
+
 ::-webkit-scrollbar-button { 
 	background-image:url(''); 
 	background-repeat:no-repeat; 
@@ -386,8 +400,8 @@ a.center_button:hover{
 
 ::-webkit-scrollbar-thumb { 
 	cursor: pointer;
-	-webkit-border-radius: 5px; 
-	border-radius: 5px; 
+	-webkit-border-radius: 10px; 
+	border-radius: 10px; 
 	background-color:#02d871; 
 	box-shadow:0px 1px 1px #fff inset; 
 	background-image:url('https://yraaa.ru/_pu/24/59610063.png'); 
