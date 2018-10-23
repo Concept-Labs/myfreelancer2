@@ -7,6 +7,7 @@ body{
 	font: normal 110% 'century gothic', arial;
 	font-size: 14px;
 	line-height: 1.428571429;
+	background-color: #e5e5e5;
 }
 div{
 	display: block;
@@ -14,7 +15,8 @@ div{
 a{
 	text-decoration: none;
 }
- p::selection{
+
+ p::selection, span::selection, h1::selection, h2::selection, h4::selection, a::selection, li::selection, ul::selection, img::selection{
  	color: #fff;
  	background-color: #02d871;
  }
@@ -26,10 +28,11 @@ a{
 	background-repeat: no-repeat;
 	z-index: 0;
 	width: 100%;
-	height: 100%;
 	color: #fff;
 	overflow: hidden;
-	
+			display: block;
+		max-width: 100%;
+		height: auto;
 }
 
 
@@ -188,7 +191,7 @@ a.center_button:hover{
 	right: 0;
 	bottom: 0;
 	left: 0;
-	z-index: 10;
+	z-index: 1000;
 	display: none;
 	/* фон затемнения */
 	background-color: rgba(0, 0, 0, 0.65);
@@ -211,7 +214,7 @@ a.center_button:hover{
 	right: 0;
 	left: 50%;
 	font-size: 14px;
-	z-index: 20;
+	z-index: 1100;
 	margin: 0;
 	width: 85%;
 
@@ -248,7 +251,7 @@ a.center_button:hover{
 	-ms-transform: translate(-50%, 0);
 	-o-transform: translate(-50%, 0);
 	transform: translate(-50%, 0);
-	top: 20%;
+	top: 15%;
 }
 /* формируем кнопку закрытия */
 .close {
@@ -372,16 +375,16 @@ a.center_button:hover{
 	background-color: #008042;
 }
 
- input:required, .popup textarea:required {
-	background: url(../img/red_asterisk.png) no-repeat 98% center;
+.popup input:required, .popup textarea:required {
+	background: #fff url(../img/red_asterisk.png) no-repeat 98% center;
 }
- input:required:valid, .popup textarea:required:valid {
-	background: url(../img/valid.png) no-repeat 98% center;
+.popup input:required:valid, .popup textarea:required:valid {
+	background: #fff url(../img/valid.png) no-repeat 98% center;
 
 	border-color: #02d871;
 }
- input:focus:invalid, .popup textarea:focus:invalid {
-	background: url(../img/invalid.png) no-repeat 98% center;
+.popup input:focus:invalid, .popup textarea:focus:invalid {
+	background: #fff url(../img/invalid.png) no-repeat 98% center;
 
 	border-color: #b03535
 }

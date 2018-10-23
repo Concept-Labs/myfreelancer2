@@ -134,6 +134,12 @@ input[type="submit"].sub{
 	float: left;
 	font: normal 120% 'century gothic', arial;
 }
+.want_site_scroll_block{
+	width: 670px; 
+	cursor: pointer; 
+	overflow:hidden;
+	margin-left: 330px;
+}
 .cont_content p{
 	color: #6E6E6E;
 	font-size: 90%;
