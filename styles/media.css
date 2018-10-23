@@ -413,4 +413,7 @@
 	.popup > div {
 		height: auto;
 	}
+	.close{
+		display: none;
+	}
 }
