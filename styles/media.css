@@ -93,7 +93,9 @@
 		-o-transition: all .6s;
 		transition: all .6s;
 	}
-
+	.side_development h1 {
+		margin-top: 40px;
+	}
 	.portfolio {
 		background-color: #F2F2F2;
 		float: left;
@@ -104,6 +106,7 @@
 	}
 	.sample_sites{
 		height: auto; 
+		overflow-y: visible;
 	}
 	.pricings p, .portfolio p {
 		font-size: 100%;
@@ -134,6 +137,7 @@
 		width: 95%;
 		margin-left: 40px;
 		float: none;
+		overflow-y: none;
 	}
 	.want_site_scroll_block{
 		width: 100%; 
@@ -396,6 +400,7 @@
 	}
 
 	/*МОДАЛЬНЕ ВІКНО*/
+
 	.popup{
 		width: 90%;
 		max-width: 900px;
