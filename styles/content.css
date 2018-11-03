@@ -326,6 +326,7 @@ input.eml{
 	background: #000;
 	border-radius: 5px;
 	width: 100%;
+	max-width: 100%;
 	padding: 2%;	
 	border: 0px;
 }
