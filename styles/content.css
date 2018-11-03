@@ -457,7 +457,9 @@ i.fab:hover{
 }
 .fot-left{
 	margin-top: 35px;
-	width: 50%;
-	
+	width: 50%;	
+}
+.fot-left p{
+	color: #adadad;
 }
 
